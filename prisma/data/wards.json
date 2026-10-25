@@ -1,0 +1,4232 @@
+[
+  {
+    "id": "HCM_Q1_TAN_INH",
+    "name": "Tân Định",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_A_KAO",
+    "name": "Đa Kao",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_BEN_NGHE",
+    "name": "Bến Nghé",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_BEN_THANH",
+    "name": "Bến Thành",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_NGUYEN_THAI_BINH",
+    "name": "Nguyễn Thái Bình",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_PHAM_NGU_LAO",
+    "name": "Phạm Ngũ Lão",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_CAU_ONG_LANH",
+    "name": "Cầu Ông Lãnh",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_CO_GIANG",
+    "name": "Cô Giang",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_NGUYEN_CU_TRINH",
+    "name": "Nguyễn Cư Trinh",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q1_CAU_KHO",
+    "name": "Cầu Kho",
+    "districtId": "HCM_Q1"
+  },
+  {
+    "id": "HCM_Q12_THANH_XUAN",
+    "name": "Thạnh Xuân",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_THANH_LOC",
+    "name": "Thạnh Lộc",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_HIEP_THANH",
+    "name": "Hiệp Thành",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_THOI_AN",
+    "name": "Thới An",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_TAN_CHANH_HIEP",
+    "name": "Tân Chánh Hiệp",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_AN_PHU_ONG",
+    "name": "An Phú Đông",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_TAN_THOI_HIEP",
+    "name": "Tân Thới Hiệp",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_TRUNG_MY_TAY",
+    "name": "Trung Mỹ Tây",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_TAN_HUNG_THUAN",
+    "name": "Tân Hưng Thuận",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_ONG_HUNG_THUAN",
+    "name": "Đông Hưng Thuận",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_Q12_TAN_THOI_NHAT",
+    "name": "Tân Thới Nhất",
+    "districtId": "HCM_Q12"
+  },
+  {
+    "id": "HCM_GO_VAP_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P17",
+    "name": "Phường 17",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P6",
+    "name": "Phường 6",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P16",
+    "name": "Phường 16",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P10",
+    "name": "Phường 10",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_GO_VAP_P3",
+    "name": "Phường 3",
+    "districtId": "HCM_GO_VAP"
+  },
+  {
+    "id": "HCM_BINH_THANH_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P27",
+    "name": "Phường 27",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P26",
+    "name": "Phường 26",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P25",
+    "name": "Phường 25",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P17",
+    "name": "Phường 17",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P22",
+    "name": "Phường 22",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P19",
+    "name": "Phường 19",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_BINH_THANH_P28",
+    "name": "Phường 28",
+    "districtId": "HCM_BINH_THANH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P3",
+    "name": "Phường 3",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P10",
+    "name": "Phường 10",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P6",
+    "name": "Phường 6",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_BINH_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_TAN_BINH"
+  },
+  {
+    "id": "HCM_TAN_PHU_TAN_SON_NHI",
+    "name": "Tân Sơn Nhì",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_TAY_THANH",
+    "name": "Tây Thạnh",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_SON_KY",
+    "name": "Sơn Kỳ",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_TAN_QUY",
+    "name": "Tân Quý",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_TAN_THANH",
+    "name": "Tân Thành",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_PHU_THO_HOA",
+    "name": "Phú Thọ Hòa",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_PHU_THANH",
+    "name": "Phú Thạnh",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_PHU_TRUNG",
+    "name": "Phú Trung",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_HOA_THANH",
+    "name": "Hòa Thạnh",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_HIEP_TAN",
+    "name": "Hiệp Tân",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_TAN_PHU_TAN_THOI_HOA",
+    "name": "Tân Thới Hòa",
+    "districtId": "HCM_TAN_PHU"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P10",
+    "name": "Phường 10",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_PHU_NHUAN_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_PHU_NHUAN"
+  },
+  {
+    "id": "HCM_THU_DUC_LINH_XUAN",
+    "name": "Linh Xuân",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_BINH_CHIEU",
+    "name": "Bình Chiểu",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LINH_TRUNG",
+    "name": "Linh Trung",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TAM_BINH",
+    "name": "Tam Bình",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TAM_PHU",
+    "name": "Tam Phú",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_HIEP_BINH_PHUOC",
+    "name": "Hiệp Bình Phước",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_HIEP_BINH_CHANH",
+    "name": "Hiệp Bình Chánh",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LINH_CHIEU",
+    "name": "Linh Chiểu",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LINH_TAY",
+    "name": "Linh Tây",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LINH_ONG",
+    "name": "Linh Đông",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_BINH_THO",
+    "name": "Bình Thọ",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TRUONG_THO",
+    "name": "Trường Thọ",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LONG_BINH",
+    "name": "Long Bình",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LONG_THANH_MY",
+    "name": "Long Thạnh Mỹ",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TAN_PHU",
+    "name": "Tân Phú",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_HIEP_PHU",
+    "name": "Hiệp Phú",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TANG_NHON_PHU_A",
+    "name": "Tăng Nhơn Phú A",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TANG_NHON_PHU_B",
+    "name": "Tăng Nhơn Phú B",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_PHUOC_LONG_B",
+    "name": "Phước Long B",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_PHUOC_LONG_A",
+    "name": "Phước Long A",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_TRUONG_THANH",
+    "name": "Trường Thạnh",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LONG_PHUOC",
+    "name": "Long Phước",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_LONG_TRUONG",
+    "name": "Long Trường",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_PHUOC_BINH",
+    "name": "Phước Bình",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_PHU_HUU",
+    "name": "Phú Hữu",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_THAO_IEN",
+    "name": "Thảo Điền",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_AN_PHU",
+    "name": "An Phú",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_AN_KHANH",
+    "name": "An Khánh",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_BINH_TRUNG_ONG",
+    "name": "Bình Trưng Đông",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_BINH_TRUNG_TAY",
+    "name": "Bình Trưng Tây",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_CAT_LAI",
+    "name": "Cát Lái",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_THANH_MY_LOI",
+    "name": "Thạnh Mỹ Lợi",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_AN_LOI_ONG",
+    "name": "An Lợi Đông",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_THU_DUC_THU_THIEM",
+    "name": "Thủ Thiêm",
+    "districtId": "HCM_THU_DUC"
+  },
+  {
+    "id": "HCM_Q3_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_VO_THI_SAU",
+    "name": "Võ Thị Sáu",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P3",
+    "name": "Phường 3",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q3_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_Q3"
+  },
+  {
+    "id": "HCM_Q10_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P10",
+    "name": "Phường 10",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q10_P6",
+    "name": "Phường 6",
+    "districtId": "HCM_Q10"
+  },
+  {
+    "id": "HCM_Q11_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P3",
+    "name": "Phường 3",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P10",
+    "name": "Phường 10",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q11_P16",
+    "name": "Phường 16",
+    "districtId": "HCM_Q11"
+  },
+  {
+    "id": "HCM_Q4_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P18",
+    "name": "Phường 18",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P3",
+    "name": "Phường 3",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P16",
+    "name": "Phường 16",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q4_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_Q4"
+  },
+  {
+    "id": "HCM_Q5_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q5_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_Q5"
+  },
+  {
+    "id": "HCM_Q6_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P13",
+    "name": "Phường 13",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P9",
+    "name": "Phường 9",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P12",
+    "name": "Phường 12",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P2",
+    "name": "Phường 2",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P11",
+    "name": "Phường 11",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P8",
+    "name": "Phường 8",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P1",
+    "name": "Phường 1",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q6_P10",
+    "name": "Phường 10",
+    "districtId": "HCM_Q6"
+  },
+  {
+    "id": "HCM_Q8_RACH_ONG",
+    "name": "Rạch Ông",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_HUNG_PHU",
+    "name": "Hưng Phú",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P4",
+    "name": "Phường 4",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_XOM_CUI",
+    "name": "Xóm Củi",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P5",
+    "name": "Phường 5",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P14",
+    "name": "Phường 14",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P6",
+    "name": "Phường 6",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P15",
+    "name": "Phường 15",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P16",
+    "name": "Phường 16",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_Q8_P7",
+    "name": "Phường 7",
+    "districtId": "HCM_Q8"
+  },
+  {
+    "id": "HCM_BINH_TAN_BINH_HUNG_HOA",
+    "name": "Bình Hưng Hòa",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_BINH_HUNG_HOA_A",
+    "name": "Bình Hưng Hòa A",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_BINH_HUNG_HOA_B",
+    "name": "Bình Hưng Hòa B",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_BINH_TRI_ONG",
+    "name": "Bình Trị Đông",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_BINH_TRI_ONG_A",
+    "name": "Bình Trị Đông A",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_BINH_TRI_ONG_B",
+    "name": "Bình Trị Đông B",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_TAN_TAO",
+    "name": "Tân Tạo",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_TAN_TAO_A",
+    "name": "Tân Tạo A",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_AN_LAC",
+    "name": "An Lạc",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_BINH_TAN_AN_LAC_A",
+    "name": "An Lạc A",
+    "districtId": "HCM_BINH_TAN"
+  },
+  {
+    "id": "HCM_Q7_TAN_THUAN_ONG",
+    "name": "Tân Thuận Đông",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_TAN_THUAN_TAY",
+    "name": "Tân Thuận Tây",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_TAN_KIENG",
+    "name": "Tân Kiểng",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_TAN_HUNG",
+    "name": "Tân Hưng",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_BINH_THUAN",
+    "name": "Bình Thuận",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_TAN_QUY",
+    "name": "Tân Quy",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_PHU_THUAN",
+    "name": "Phú Thuận",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_TAN_PHU",
+    "name": "Tân Phú",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_TAN_PHONG",
+    "name": "Tân Phong",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_Q7_PHU_MY",
+    "name": "Phú Mỹ",
+    "districtId": "HCM_Q7"
+  },
+  {
+    "id": "HCM_CU_CHI_TT_CU_CHI",
+    "name": "Thị trấn Củ Chi",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_PHU_MY_HUNG",
+    "name": "Phú Mỹ Hưng",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_AN_PHU",
+    "name": "An Phú",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TRUNG_LAP_THUONG",
+    "name": "Trung Lập Thượng",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_AN_NHON_TAY",
+    "name": "An Nhơn Tây",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_NHUAN_UC",
+    "name": "Nhuận Đức",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_PHAM_VAN_COI",
+    "name": "Phạm Văn Cội",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_PHU_HOA_ONG",
+    "name": "Phú Hòa Đông",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TRUNG_LAP_HA",
+    "name": "Trung Lập Hạ",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TRUNG_AN",
+    "name": "Trung An",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_PHUOC_THANH",
+    "name": "Phước Thạnh",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_PHUOC_HIEP",
+    "name": "Phước Hiệp",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TAN_AN_HOI",
+    "name": "Tân An Hội",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_PHUOC_VINH_AN",
+    "name": "Phước Vĩnh An",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_THAI_MY",
+    "name": "Thái Mỹ",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TAN_THANH_TAY",
+    "name": "Tân Thạnh Tây",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_HOA_PHU",
+    "name": "Hòa Phú",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TAN_THANH_ONG",
+    "name": "Tân Thạnh Đông",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_BINH_MY",
+    "name": "Bình Mỹ",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TAN_PHU_TRUNG",
+    "name": "Tân Phú Trung",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_CU_CHI_TAN_THONG_HOI",
+    "name": "Tân Thông Hội",
+    "districtId": "HCM_CU_CHI"
+  },
+  {
+    "id": "HCM_HOC_MON_TT_HOC_MON",
+    "name": "Thị trấn Hóc Môn",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_TAN_HIEP",
+    "name": "Tân Hiệp",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_NHI_BINH",
+    "name": "Nhị Bình",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_ONG_THANH",
+    "name": "Đông Thạnh",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_TAN_THOI_NHI",
+    "name": "Tân Thới Nhì",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_THOI_TAM_THON",
+    "name": "Thới Tam Thôn",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_XUAN_THOI_SON",
+    "name": "Xuân Thới Sơn",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_TAN_XUAN",
+    "name": "Tân Xuân",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_XUAN_THOI_ONG",
+    "name": "Xuân Thới Đông",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_TRUNG_CHANH",
+    "name": "Trung Chánh",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_XUAN_THOI_THUONG",
+    "name": "Xuân Thới Thượng",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_HOC_MON_BA_IEM",
+    "name": "Bà Điểm",
+    "districtId": "HCM_HOC_MON"
+  },
+  {
+    "id": "HCM_BINH_CHANH_TT_TAN_TUC",
+    "name": "Thị trấn Tân Túc",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_PHAM_VAN_HAI",
+    "name": "Phạm Văn Hai",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_VINH_LOC_A",
+    "name": "Vĩnh Lộc A",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_VINH_LOC_B",
+    "name": "Vĩnh Lộc B",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_BINH_LOI",
+    "name": "Bình Lợi",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_LE_MINH_XUAN",
+    "name": "Lê Minh Xuân",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_TAN_NHUT",
+    "name": "Tân Nhựt",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_TAN_KIEN",
+    "name": "Tân Kiên",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_BINH_HUNG",
+    "name": "Bình Hưng",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_PHONG_PHU",
+    "name": "Phong Phú",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_AN_PHU_TAY",
+    "name": "An Phú Tây",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_HUNG_LONG",
+    "name": "Hưng Long",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_A_PHUOC",
+    "name": "Đa Phước",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_TAN_QUY_TAY",
+    "name": "Tân Quý Tây",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_BINH_CHANH",
+    "name": "Bình Chánh",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_BINH_CHANH_QUY_UC",
+    "name": "Quy Đức",
+    "districtId": "HCM_BINH_CHANH"
+  },
+  {
+    "id": "HCM_NHA_BE_TT_NHA_BE",
+    "name": "Thị trấn Nhà Bè",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_NHA_BE_PHUOC_KIEN",
+    "name": "Phước Kiển",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_NHA_BE_PHUOC_LOC",
+    "name": "Phước Lộc",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_NHA_BE_NHON_UC",
+    "name": "Nhơn Đức",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_NHA_BE_PHU_XUAN",
+    "name": "Phú Xuân",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_NHA_BE_LONG_THOI",
+    "name": "Long Thới",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_NHA_BE_HIEP_PHUOC",
+    "name": "Hiệp Phước",
+    "districtId": "HCM_NHA_BE"
+  },
+  {
+    "id": "HCM_CAN_GIO_TT_CAN_THANH",
+    "name": "Thị trấn Cần Thạnh",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HCM_CAN_GIO_BINH_KHANH",
+    "name": "Bình Khánh",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HCM_CAN_GIO_TAM_THON_HIEP",
+    "name": "Tam Thôn Hiệp",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HCM_CAN_GIO_AN_THOI_ONG",
+    "name": "An Thới Đông",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HCM_CAN_GIO_THANH_AN",
+    "name": "Thạnh An",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HCM_CAN_GIO_LONG_HOA",
+    "name": "Long Hòa",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HCM_CAN_GIO_LY_NHON",
+    "name": "Lý Nhơn",
+    "districtId": "HCM_CAN_GIO"
+  },
+  {
+    "id": "HN_BA_DINH_PHUC_XA",
+    "name": "Phúc Xá",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_TRUC_BACH",
+    "name": "Trúc Bạch",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_VINH_PHUC",
+    "name": "Vĩnh Phúc",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_CONG_VI",
+    "name": "Cống Vị",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_LIEU_GIAI",
+    "name": "Liễu Giai",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_QUAN_THANH",
+    "name": "Quán Thánh",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_NGOC_HA",
+    "name": "Ngọc Hà",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_DIEN_BIEN",
+    "name": "Điện Biên",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_DOI_CAN",
+    "name": "Đội Cấn",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_NGOC_KHANH",
+    "name": "Ngọc Khánh",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_KIM_MA",
+    "name": "Kim Mã",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_GIANG_VO",
+    "name": "Giảng Võ",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_BA_DINH_THANH_CONG",
+    "name": "Thành Công",
+    "districtId": "HN_BA_DINH"
+  },
+  {
+    "id": "HN_HOAN_KIEM_PHUC_TAN",
+    "name": "Phúc Tân",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_DONG_XUAN",
+    "name": "Đồng Xuân",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_MA",
+    "name": "Hàng Mã",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_BUOM",
+    "name": "Hàng Buồm",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_DAO",
+    "name": "Hàng Đào",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_BO",
+    "name": "Hàng Bồ",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_CUA_DONG",
+    "name": "Cửa Đông",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_LY_THAI_TO",
+    "name": "Lý Thái Tổ",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_BAC",
+    "name": "Hàng Bạc",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_GAI",
+    "name": "Hàng Gai",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_CHUONG_DUONG",
+    "name": "Chương Dương",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_TRONG",
+    "name": "Hàng Trống",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_CUA_NAM",
+    "name": "Cửa Nam",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_BONG",
+    "name": "Hàng Bông",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_TRANG_TIEN",
+    "name": "Tràng Tiền",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_TRAN_HUNG_DAO",
+    "name": "Trần Hưng Đạo",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_PHAN_CHU_TRINH",
+    "name": "Phan Chu Trinh",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_HOAN_KIEM_HANG_BAI",
+    "name": "Hàng Bài",
+    "districtId": "HN_HOAN_KIEM"
+  },
+  {
+    "id": "HN_TAY_HO_PHU_THUONG",
+    "name": "Phú Thượng",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_NHAT_TAN",
+    "name": "Nhật Tân",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_TU_LIEN",
+    "name": "Tứ Liên",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_QUANG_AN",
+    "name": "Quảng An",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_XUAN_LA",
+    "name": "Xuân La",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_YEN_PHU",
+    "name": "Yên Phụ",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_BUOI",
+    "name": "Bưởi",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_TAY_HO_THUY_KHUE",
+    "name": "Thụy Khuê",
+    "districtId": "HN_TAY_HO"
+  },
+  {
+    "id": "HN_LONG_BIEN_THUONG_THANH",
+    "name": "Thượng Thanh",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_NGOC_THUY",
+    "name": "Ngọc Thụy",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_GIANG_BIEN",
+    "name": "Giang Biên",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_DUC_GIANG",
+    "name": "Đức Giang",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_VIET_HUNG",
+    "name": "Việt Hưng",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_GIA_THUY",
+    "name": "Gia Thụy",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_NGOC_LAM",
+    "name": "Ngọc Lâm",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_PHUC_LOI",
+    "name": "Phúc Lợi",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_BO_DE",
+    "name": "Bồ Đề",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_LONG_BIEN",
+    "name": "Long Biên",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_THACH_BAN",
+    "name": "Thạch Bàn",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_PHUC_DONG",
+    "name": "Phúc Đồng",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_LONG_BIEN_CU_KHOI",
+    "name": "Cự Khối",
+    "districtId": "HN_LONG_BIEN"
+  },
+  {
+    "id": "HN_CAU_GIAY_NGHIA_DO",
+    "name": "Nghĩa Đô",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_NGHIA_TAN",
+    "name": "Nghĩa Tân",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_MAI_DICH",
+    "name": "Mai Dịch",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_DICH_VONG",
+    "name": "Dịch Vọng",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_DICH_VONG_HAU",
+    "name": "Dịch Vọng Hậu",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_QUAN_HOA",
+    "name": "Quan Hoa",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_YEN_HOA",
+    "name": "Yên Hòa",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_CAU_GIAY_TRUNG_HOA",
+    "name": "Trung Hòa",
+    "districtId": "HN_CAU_GIAY"
+  },
+  {
+    "id": "HN_DONG_DA_CAT_LINH",
+    "name": "Cát Linh",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_VAN_MIEU_QUOC_TU_GIAM",
+    "name": "Văn Miếu - Quốc Tử Giám",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_LANG_THUONG",
+    "name": "Láng Thượng",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_O_CHO_DUA",
+    "name": "Ô Chợ Dừa",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_VAN_CHUONG",
+    "name": "Văn Chương",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_HANG_BOT",
+    "name": "Hàng Bột",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_LANG_HA",
+    "name": "Láng Hạ",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_KHAM_THIEN",
+    "name": "Khâm Thiên",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_THO_QUAN",
+    "name": "Thổ Quan",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_NAM_DONG",
+    "name": "Nam Đồng",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_QUANG_TRUNG",
+    "name": "Quang Trung",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_TRUNG_LIET",
+    "name": "Trung Liệt",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_PHUONG_LIEN_TRUNG_TU",
+    "name": "Phương Liên - Trung Tự",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_KIM_LIEN",
+    "name": "Kim Liên",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_PHUONG_MAI",
+    "name": "Phương Mai",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_THINH_QUANG",
+    "name": "Thịnh Quang",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_DONG_DA_KHUONG_THUONG",
+    "name": "Khương Thượng",
+    "districtId": "HN_DONG_DA"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_NGUYEN_DU",
+    "name": "Nguyễn Du",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_BACH_DANG",
+    "name": "Bạch Đằng",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_PHAM_DINH_HO",
+    "name": "Phạm Đình Hổ",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_LE_DAI_HANH",
+    "name": "Lê Đại Hành",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_DONG_NHAN",
+    "name": "Đồng Nhân",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_PHO_HUE",
+    "name": "Phố Huế",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_THANH_LUONG",
+    "name": "Thanh Lương",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_THANH_NHAN",
+    "name": "Thanh Nhàn",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_BACH_KHOA",
+    "name": "Bách Khoa",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_DONG_TAM",
+    "name": "Đồng Tâm",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_VINH_TUY",
+    "name": "Vĩnh Tuy",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_QUYNH_MAI",
+    "name": "Quỳnh Mai",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_BACH_MAI",
+    "name": "Bạch Mai",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_MINH_KHAI",
+    "name": "Minh Khai",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG_TRUONG_DINH",
+    "name": "Trương Định",
+    "districtId": "HN_HAI_BA_TRUNG"
+  },
+  {
+    "id": "HN_HOANG_MAI_THANH_TRI",
+    "name": "Thanh Trì",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_VINH_HUNG",
+    "name": "Vĩnh Hưng",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_DINH_CONG",
+    "name": "Định Công",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_MAI_DONG",
+    "name": "Mai Động",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_TUONG_MAI",
+    "name": "Tương Mai",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_DAI_KIM",
+    "name": "Đại Kim",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_TAN_MAI",
+    "name": "Tân Mai",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_HOANG_VAN_THU",
+    "name": "Hòang Văn Thụ",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_GIAP_BAT",
+    "name": "Giáp Bát",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_LINH_NAM",
+    "name": "Lĩnh Nam",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_THINH_LIET",
+    "name": "Thịnh Liệt",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_TRAN_PHU",
+    "name": "Trần Phú",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_HOANG_LIET",
+    "name": "Hòang Liệt",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_HOANG_MAI_YEN_SO",
+    "name": "Yên Sở",
+    "districtId": "HN_HOANG_MAI"
+  },
+  {
+    "id": "HN_THANH_XUAN_NHAN_CHINH",
+    "name": "Nhân Chính",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_THUONG_DINH",
+    "name": "Thượng Đình",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_KHUONG_TRUNG",
+    "name": "Khương Trung",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_KHUONG_MAI",
+    "name": "Khương Mai",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_THANH_XUAN_TRUNG",
+    "name": "Thanh Xuân Trung",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_PHUONG_LIET",
+    "name": "Phương Liệt",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_KHUONG_DINH",
+    "name": "Khương Đình",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_THANH_XUAN_BAC",
+    "name": "Thanh Xuân Bắc",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_THANH_XUAN_HA_DINH",
+    "name": "Hạ Đình",
+    "districtId": "HN_THANH_XUAN"
+  },
+  {
+    "id": "HN_SOC_SON_TT_SOC_SON",
+    "name": "Thị trấn Sóc Sơn",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_BAC_SON",
+    "name": "Bắc Sơn",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_MINH_TRI",
+    "name": "Minh Trí",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_HONG_KY",
+    "name": "Hồng Kỳ",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_NAM_SON",
+    "name": "Nam Sơn",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_TRUNG_GIA",
+    "name": "Trung Giã",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_TAN_HUNG",
+    "name": "Tân Hưng",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_MINH_PHU",
+    "name": "Minh Phú",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_PHU_LINH",
+    "name": "Phù Linh",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_BAC_PHU",
+    "name": "Bắc Phú",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_TAN_MINH",
+    "name": "Tân Minh",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_QUANG_TIEN",
+    "name": "Quang Tiến",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_HIEN_NINH",
+    "name": "Hiền Ninh",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_TAN_DAN",
+    "name": "Tân Dân",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_TIEN_DUOC",
+    "name": "Tiên Dược",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_VIET_LONG",
+    "name": "Việt Long",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_XUAN_GIANG",
+    "name": "Xuân Giang",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_MAI_DINH",
+    "name": "Mai Đình",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_DUC_HOA",
+    "name": "Đức Hòa",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_THANH_XUAN",
+    "name": "Thanh Xuân",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_DONG_XUAN",
+    "name": "Đông Xuân",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_KIM_LU",
+    "name": "Kim Lũ",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_PHU_CUONG",
+    "name": "Phú Cường",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_PHU_MINH",
+    "name": "Phú Minh",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_PHU_LO",
+    "name": "Phù Lỗ",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_SOC_SON_XUAN_THU",
+    "name": "Xuân Thu",
+    "districtId": "HN_SOC_SON"
+  },
+  {
+    "id": "HN_DONG_ANH_TT_DONG_ANH",
+    "name": "Thị trấn Đông Anh",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_XUAN_NON",
+    "name": "Xuân Nộn",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_THUY_LAM",
+    "name": "Thuỵ Lâm",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_BAC_HONG",
+    "name": "Bắc Hồng",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_NGUYEN_KHE",
+    "name": "Nguyên Khê",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_NAM_HONG",
+    "name": "Nam Hồng",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_TIEN_DUONG",
+    "name": "Tiên Dương",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_VAN_HA",
+    "name": "Vân Hà",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_UY_NO",
+    "name": "Uy Nỗ",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_VAN_NOI",
+    "name": "Vân Nội",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_LIEN_HA",
+    "name": "Liên Hà",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_VIET_HUNG",
+    "name": "Việt Hùng",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_KIM_NO",
+    "name": "Kim Nỗ",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_KIM_CHUNG",
+    "name": "Kim Chung",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_DUC_TU",
+    "name": "Dục Tú",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_DAI_MACH",
+    "name": "Đại Mạch",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_VINH_NGOC",
+    "name": "Vĩnh Ngọc",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_CO_LOA",
+    "name": "Cổ Loa",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_HAI_BOI",
+    "name": "Hải Bối",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_XUAN_CANH",
+    "name": "Xuân Canh",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_VONG_LA",
+    "name": "Võng La",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_TAM_XA",
+    "name": "Tàm Xá",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_MAI_LAM",
+    "name": "Mai Lâm",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_DONG_ANH_DONG_HOI",
+    "name": "Đông Hội",
+    "districtId": "HN_DONG_ANH"
+  },
+  {
+    "id": "HN_GIA_LAM_TT_YEN_VIEN",
+    "name": "Thị trấn Yên Viên",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_YEN_THUONG",
+    "name": "Yên Thường",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_YEN_VIEN",
+    "name": "Yên Viên",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_NINH_HIEP",
+    "name": "Ninh Hiệp",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_THIEN_DUC",
+    "name": "Thiên Đức",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_PHU_DONG",
+    "name": "Phù Đổng",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_LE_CHI",
+    "name": "Lệ Chi",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_CO_BI",
+    "name": "Cổ Bi",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_DANG_XA",
+    "name": "Đặng Xá",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_PHU_SON",
+    "name": "Phú Sơn",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_TT_TRAU_QUY",
+    "name": "Thị trấn Trâu Quỳ",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_DUONG_QUANG",
+    "name": "Dương Quang",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_DUONG_XA",
+    "name": "Dương Xá",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_DA_TON",
+    "name": "Đa Tốn",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_KIEU_KY",
+    "name": "Kiêu Kỵ",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_BAT_TRANG",
+    "name": "Bát Tràng",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_GIA_LAM_KIM_DUC",
+    "name": "Kim Đức",
+    "districtId": "HN_GIA_LAM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_CAU_DIEN",
+    "name": "Cầu Diễn",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_XUAN_PHUONG",
+    "name": "Xuân Phương",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_PHUONG_CANH",
+    "name": "Phương Canh",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_MY_DINH_1",
+    "name": "Mỹ Đình 1",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_MY_DINH_2",
+    "name": "Mỹ Đình 2",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_TAY_MO",
+    "name": "Tây Mỗ",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_ME_TRI",
+    "name": "Mễ Trì",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_PHU_DO",
+    "name": "Phú Đô",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_DAI_MO",
+    "name": "Đại Mỗ",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM_TRUNG_VAN",
+    "name": "Trung Văn",
+    "districtId": "HN_NAM_TU_LIEM"
+  },
+  {
+    "id": "HN_THANH_TRI_TT_VAN_DIEN",
+    "name": "Thị trấn Văn Điển",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_TAN_TRIEU",
+    "name": "Tân Triều",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_THANH_LIET",
+    "name": "Thanh Liệt",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_TA_THANH_OAI",
+    "name": "Tả Thanh Oai",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_HUU_HOA",
+    "name": "Hữu Hòa",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_TAM_HIEP",
+    "name": "Tam Hiệp",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_TU_HIEP",
+    "name": "Tứ Hiệp",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_YEN_MY",
+    "name": "Yên Mỹ",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_VINH_QUYNH",
+    "name": "Vĩnh Quỳnh",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_NGU_HIEP",
+    "name": "Ngũ Hiệp",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_DUYEN_HA",
+    "name": "Duyên Hà",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_NGOC_HOI",
+    "name": "Ngọc Hồi",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_VAN_PHUC",
+    "name": "Vạn Phúc",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_DAI_ANG",
+    "name": "Đại áng",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_LIEN_NINH",
+    "name": "Liên Ninh",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_THANH_TRI_DONG_MY",
+    "name": "Đông Mỹ",
+    "districtId": "HN_THANH_TRI"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_THUONG_CAT",
+    "name": "Thượng Cát",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_LIEN_MAC",
+    "name": "Liên Mạc",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_DONG_NGAC",
+    "name": "Đông Ngạc",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_DUC_THANG",
+    "name": "Đức Thắng",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_THUY_PHUONG",
+    "name": "Thụy Phương",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_TAY_TUU",
+    "name": "Tây Tựu",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_XUAN_DINH",
+    "name": "Xuân Đỉnh",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_XUAN_TAO",
+    "name": "Xuân Tảo",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_MINH_KHAI",
+    "name": "Minh Khai",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_CO_NHUE_1",
+    "name": "Cổ Nhuế 1",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_CO_NHUE_2",
+    "name": "Cổ Nhuế 2",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_PHU_DIEN",
+    "name": "Phú Diễn",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM_PHUC_DIEN",
+    "name": "Phúc Diễn",
+    "districtId": "HN_BAC_TU_LIEM"
+  },
+  {
+    "id": "HN_ME_LINH_TT_CHI_DONG",
+    "name": "Thị trấn Chi Đông",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_DAI_THINH",
+    "name": "Đại Thịnh",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_KIM_HOA",
+    "name": "Kim Hoa",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_THACH_DA",
+    "name": "Thạch Đà",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TIEN_THANG",
+    "name": "Tiến Thắng",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TU_LAP",
+    "name": "Tự Lập",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TT_QUANG_MINH",
+    "name": "Thị trấn Quang Minh",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_THANH_LAM",
+    "name": "Thanh Lâm",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TAM_DONG",
+    "name": "Tam Đồng",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_LIEN_MAC",
+    "name": "Liên Mạc",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_CHU_PHAN",
+    "name": "Chu Phan",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TIEN_THINH",
+    "name": "Tiến Thịnh",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_ME_LINH",
+    "name": "Mê Linh",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_VAN_KHE",
+    "name": "Văn Khê",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_HOANG_KIM",
+    "name": "Hòang Kim",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TIEN_PHONG",
+    "name": "Tiền Phong",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_ME_LINH_TRANG_VIET",
+    "name": "Tráng Việt",
+    "districtId": "HN_ME_LINH"
+  },
+  {
+    "id": "HN_HA_DONG_QUANG_TRUNG",
+    "name": "Quang Trung",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_MO_LAO",
+    "name": "Mộ Lao",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_VAN_QUAN",
+    "name": "Văn Quán",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_VAN_PHUC",
+    "name": "Vạn Phúc",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_LA_KHE",
+    "name": "La Khê",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_PHU_LA",
+    "name": "Phú La",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_PHUC_LA",
+    "name": "Phúc La",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_HA_CAU",
+    "name": "Hà Cầu",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_YEN_NGHIA",
+    "name": "Yên Nghĩa",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_KIEN_HUNG",
+    "name": "Kiến Hưng",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_PHU_LAM",
+    "name": "Phú Lãm",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_PHU_LUONG",
+    "name": "Phú Lương",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_DUONG_NOI",
+    "name": "Dương Nội",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_DONG_MAI",
+    "name": "Đồng Mai",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_HA_DONG_BIEN_GIANG",
+    "name": "Biên Giang",
+    "districtId": "HN_HA_DONG"
+  },
+  {
+    "id": "HN_SON_TAY_NGO_QUYEN",
+    "name": "Ngô Quyền",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_PHU_THINH",
+    "name": "Phú Thịnh",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_SON_LOC",
+    "name": "Sơn Lộc",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_XUAN_KHANH",
+    "name": "Xuân Khanh",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_DUONG_LAM",
+    "name": "Đường Lâm",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_VIEN_SON",
+    "name": "Viên Sơn",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_XUAN_SON",
+    "name": "Xuân Sơn",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_TRUNG_HUNG",
+    "name": "Trung Hưng",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_THANH_MY",
+    "name": "Thanh Mỹ",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_TRUNG_SON_TRAM",
+    "name": "Trung Sơn Trầm",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_KIM_SON",
+    "name": "Kim Sơn",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_SON_DONG",
+    "name": "Sơn Đông",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_SON_TAY_CO_DONG",
+    "name": "Cổ Đông",
+    "districtId": "HN_SON_TAY"
+  },
+  {
+    "id": "HN_BA_VI_TT_TAY_DANG",
+    "name": "Thị trấn Tây Đằng",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_PHU_CUONG",
+    "name": "Phú Cường",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_CO_DO",
+    "name": "Cổ Đô",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_VAN_THANG",
+    "name": "Vạn Thắng",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_PHONG_VAN",
+    "name": "Phong Vân",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_PHU_DONG",
+    "name": "Phú Đông",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_PHU_HONG",
+    "name": "Phú Hồng",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_PHU_CHAU",
+    "name": "Phú Châu",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_THAI_HOA",
+    "name": "Thái Hòa",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_DONG_THAI",
+    "name": "Đồng Thái",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_PHU_SON",
+    "name": "Phú Sơn",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_MINH_CHAU",
+    "name": "Minh Châu",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_VAT_LAI",
+    "name": "Vật Lại",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_CHU_MINH",
+    "name": "Chu Minh",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_TONG_BAT",
+    "name": "Tòng Bạt",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_CAM_LINH",
+    "name": "Cẩm Lĩnh",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_SON_DA",
+    "name": "Sơn Đà",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_DONG_QUANG",
+    "name": "Đông Quang",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_TIEN_PHONG",
+    "name": "Tiên Phong",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_THUY_AN",
+    "name": "Thụy An",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_CAM_THUONG",
+    "name": "Cam Thượng",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_THUAN_MY",
+    "name": "Thuần Mỹ",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_TAN_LINH",
+    "name": "Tản Lĩnh",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_BA_TRAI",
+    "name": "Ba Trại",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_MINH_QUANG",
+    "name": "Minh Quang",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_BA_VI",
+    "name": "Ba Vì",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_VAN_HOA",
+    "name": "Vân Hòa",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_YEN_BAI",
+    "name": "Yên Bài",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_BA_VI_KHANH_THUONG",
+    "name": "Khánh Thượng",
+    "districtId": "HN_BA_VI"
+  },
+  {
+    "id": "HN_PHUC_THO_TT_PHUC_THO",
+    "name": "Thị trấn Phúc Thọ",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_VAN_PHUC",
+    "name": "Vân Phúc",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_NAM_HA",
+    "name": "Nam Hà",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_XUAN_DINH",
+    "name": "Xuân Đình",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_SEN_PHUONG",
+    "name": "Sen Phương",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_VONG_XUYEN",
+    "name": "Võng Xuyên",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_TICH_LOC",
+    "name": "Tích Lộc",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_LONG_THUONG",
+    "name": "Long Thượng",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_HAT_MON",
+    "name": "Hát Môn",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_THANH_DA",
+    "name": "Thanh Đa",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_TRACH_MY_LOC",
+    "name": "Trạch Mỹ Lộc",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_PHUC_HOA",
+    "name": "Phúc Hòa",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_NGOC_TAO",
+    "name": "Ngọc Tảo",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_PHUNG_THUONG",
+    "name": "Phụng Thượng",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_TAM_THUAN",
+    "name": "Tam Thuấn",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_TAM_HIEP",
+    "name": "Tam Hiệp",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_HIEP_THUAN",
+    "name": "Hiệp Thuận",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_PHUC_THO_LIEN_HIEP",
+    "name": "Liên Hiệp",
+    "districtId": "HN_PHUC_THO"
+  },
+  {
+    "id": "HN_DAN_PHUONG_TT_PHUNG",
+    "name": "Thị trấn Phùng",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_TRUNG_CHAU",
+    "name": "Trung Châu",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_THO_AN",
+    "name": "Thọ An",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_THO_XUAN",
+    "name": "Thọ Xuân",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_HONG_HA",
+    "name": "Hồng Hà",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_LIEN_HONG",
+    "name": "Liên Hồng",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_LIEN_HA",
+    "name": "Liên Hà",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_HA_MO",
+    "name": "Hạ Mỗ",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_LIEN_TRUNG",
+    "name": "Liên Trung",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_PHUONG_DINH",
+    "name": "Phương Đình",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_THUONG_MO",
+    "name": "Thượng Mỗ",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_TAN_HOI",
+    "name": "Tân Hội",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_TAN_LAP",
+    "name": "Tân Lập",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_DAN_PHUONG",
+    "name": "Đan Phượng",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_DONG_THAP",
+    "name": "Đồng Tháp",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_DAN_PHUONG_SONG_PHUONG",
+    "name": "Song Phượng",
+    "districtId": "HN_DAN_PHUONG"
+  },
+  {
+    "id": "HN_HOAI_DUC_TT_TRAM_TROI",
+    "name": "Thị trấn Trạm Trôi",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_DUC_THUONG",
+    "name": "Đức Thượng",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_MINH_KHAI",
+    "name": "Minh Khai",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_DUONG_LIEU",
+    "name": "Dương Liễu",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_DI_TRACH",
+    "name": "Di Trạch",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_DUC_GIANG",
+    "name": "Đức Giang",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_CAT_QUE",
+    "name": "Cát Quế",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_KIM_CHUNG",
+    "name": "Kim Chung",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_YEN_SO",
+    "name": "Yên Sở",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_SON_DONG",
+    "name": "Sơn Đồng",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_VAN_CANH",
+    "name": "Vân Canh",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_DAC_SO",
+    "name": "Đắc Sở",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_LAI_YEN",
+    "name": "Lại Yên",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_TIEN_YEN",
+    "name": "Tiền Yên",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_SONG_PHUONG",
+    "name": "Song Phương",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_AN_KHANH",
+    "name": "An Khánh",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_AN_THUONG",
+    "name": "An Thượng",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_VAN_CON",
+    "name": "Vân Côn",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_LA_PHU",
+    "name": "La Phù",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_HOAI_DUC_DONG_LA",
+    "name": "Đông La",
+    "districtId": "HN_HOAI_DUC"
+  },
+  {
+    "id": "HN_QUOC_OAI_DONG_XUAN",
+    "name": "Đông Xuân",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_TT_QUOC_OAI",
+    "name": "Thị trấn Quốc Oai",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_SAI_SON",
+    "name": "Sài Sơn",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_PHUONG_SON",
+    "name": "Phượng Sơn",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_NGOC_LIEP",
+    "name": "Ngọc Liệp",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_NGOC_MY",
+    "name": "Ngọc Mỹ",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_THACH_THAN",
+    "name": "Thạch Thán",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_DONG_QUANG",
+    "name": "Đồng Quang",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_PHU_CAT",
+    "name": "Phú Cát",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_TUYET_NGHIA",
+    "name": "Tuyết Nghĩa",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_LIEP_NGHIA",
+    "name": "Liệp Nghĩa",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_CONG_HOA",
+    "name": "Cộng Hòa",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_HUNG_DAO",
+    "name": "Hưng Đạo",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_PHU_MAN",
+    "name": "Phú Mãn",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_CAN_HUU",
+    "name": "Cấn Hữu",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_HOA_THACH",
+    "name": "Hòa Thạch",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_QUOC_OAI_DONG_YEN",
+    "name": "Đông Yên",
+    "districtId": "HN_QUOC_OAI"
+  },
+  {
+    "id": "HN_THACH_THAT_YEN_TRUNG",
+    "name": "Yên Trung",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_YEN_BINH",
+    "name": "Yên Bình",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_TIEN_XUAN",
+    "name": "Tiến Xuân",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_TT_LIEN_QUAN",
+    "name": "Thị trấn Liên Quan",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_DAI_DONG",
+    "name": "Đại Đồng",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_CAM_YEN",
+    "name": "Cẩm Yên",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_LAI_THUONG",
+    "name": "Lại Thượng",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_PHU_KIM",
+    "name": "Phú Kim",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_HUONG_NGAI",
+    "name": "Hương Ngải",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_LAM_SON",
+    "name": "Lam Sơn",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_KIM_QUAN",
+    "name": "Kim Quan",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_BINH_YEN",
+    "name": "Bình Yên",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_THACH_HOA",
+    "name": "Thạch Hòa",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_CAN_KIEM",
+    "name": "Cần Kiệm",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_PHUNG_XA",
+    "name": "Phùng Xá",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_TAN_XA",
+    "name": "Tân Xã",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_THACH_XA",
+    "name": "Thạch Xá",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_QUANG_TRUNG",
+    "name": "Quang Trung",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_HA_BANG",
+    "name": "Hạ Bằng",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_THACH_THAT_DONG_TRUC",
+    "name": "Đồng Trúc",
+    "districtId": "HN_THACH_THAT"
+  },
+  {
+    "id": "HN_CHUONG_MY_TT_CHUC_SON",
+    "name": "Thị trấn Chúc Sơn",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TT_XUAN_MAI",
+    "name": "Thị trấn Xuân Mai",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_PHUNG_CHAU",
+    "name": "Phụng Châu",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TIEN_PHUONG",
+    "name": "Tiên Phương",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_DONG_SON",
+    "name": "Đông Sơn",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_DONG_PHUONG_YEN",
+    "name": "Đông Phương Yên",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_PHU_NGHIA",
+    "name": "Phú Nghĩa",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TRUONG_YEN",
+    "name": "Trường Yên",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_NGOC_HOA",
+    "name": "Ngọc Hòa",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_THUY_XUAN_TIEN",
+    "name": "Thủy Xuân Tiên",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_THANH_BINH",
+    "name": "Thanh Bình",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TRUNG_HOA",
+    "name": "Trung Hòa",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_DAI_YEN",
+    "name": "Đại Yên",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_THUY_HUONG",
+    "name": "Thụy Hương",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TOT_DONG",
+    "name": "Tốt Động",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_LAM_DIEN",
+    "name": "Lam Điền",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TAN_TIEN",
+    "name": "Tân Tiến",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_NAM_PHUONG_TIEN",
+    "name": "Nam Phương Tiến",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_HOP_DONG",
+    "name": "Hợp Đồng",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_HOANG_VAN_THU",
+    "name": "Hòang Văn Thụ",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_HOANG_DIEU",
+    "name": "Hòang Diệu",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_HUU_VAN",
+    "name": "Hữu Văn",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_QUANG_BI",
+    "name": "Quảng Bị",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_MY_LUONG",
+    "name": "Mỹ Lương",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_THUONG_VUC",
+    "name": "Thượng Vực",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_HONG_PHU",
+    "name": "Hồng Phú",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_TRAN_PHU",
+    "name": "Trần Phú",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_VAN_VO",
+    "name": "Văn Võ",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_DONG_LAC",
+    "name": "Đồng Lạc",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_CHUONG_MY_HOA_PHU",
+    "name": "Hòa Phú",
+    "districtId": "HN_CHUONG_MY"
+  },
+  {
+    "id": "HN_THANH_OAI_TT_KIM_BAI",
+    "name": "Thị trấn Kim Bài",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_CU_KHE",
+    "name": "Cự Khê",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_BICH_HOA",
+    "name": "Bích Hòa",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_MY_HUNG",
+    "name": "Mỹ Hưng",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_CAO_VIEN",
+    "name": "Cao Viên",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_BINH_MINH",
+    "name": "Bình Minh",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_TAM_HUNG",
+    "name": "Tam Hưng",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_THANH_CAO",
+    "name": "Thanh Cao",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_THANH_THUY",
+    "name": "Thanh Thùy",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_THANH_MAI",
+    "name": "Thanh Mai",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_THANH_VAN",
+    "name": "Thanh Văn",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_DO_DONG",
+    "name": "Đỗ Động",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_KIM_AN",
+    "name": "Kim An",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_KIM_THU",
+    "name": "Kim Thư",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_PHUONG_TRUNG",
+    "name": "Phương Trung",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_TAN_UOC",
+    "name": "Tân Ước",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_DAN_HOA",
+    "name": "Dân Hòa",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_LIEN_CHAU",
+    "name": "Liên Châu",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_CAO_XUAN_DUONG",
+    "name": "Cao Xuân Dương",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THANH_OAI_HONG_DUONG",
+    "name": "Hồng Dương",
+    "districtId": "HN_THANH_OAI"
+  },
+  {
+    "id": "HN_THUONG_TIN_TT_THUONG_TIN",
+    "name": "Thị trấn Thường Tín",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_NINH_SO",
+    "name": "Ninh Sở",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_NHI_KHE",
+    "name": "Nhị Khê",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_DUYEN_THAI",
+    "name": "Duyên Thái",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_KHANH_HA",
+    "name": "Khánh Hà",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_HOA_BINH",
+    "name": "Hòa Bình",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_VAN_BINH",
+    "name": "Văn Bình",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_HIEN_GIANG",
+    "name": "Hiền Giang",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_HONG_VAN",
+    "name": "Hồng Vân",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_VAN_TAO",
+    "name": "Vân Tảo",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_LIEN_PHUONG",
+    "name": "Liên Phương",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_VAN_PHU",
+    "name": "Văn Phú",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_TU_NHIEN",
+    "name": "Tự Nhiên",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_TIEN_PHONG",
+    "name": "Tiền Phong",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_HA_HOI",
+    "name": "Hà Hồi",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_NGUYEN_TRAI",
+    "name": "Nguyễn Trãi",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_QUAT_DONG",
+    "name": "Quất Động",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_CHUONG_DUONG",
+    "name": "Chương Dương",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_TAN_MINH",
+    "name": "Tân Minh",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_LE_LOI",
+    "name": "Lê Lợi",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_THANG_LOI",
+    "name": "Thắng Lợi",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_DUNG_TIEN",
+    "name": "Dũng Tiến",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_NGHIEM_XUYEN",
+    "name": "Nghiêm Xuyên",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_TO_HIEU",
+    "name": "Tô Hiệu",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_VAN_TU",
+    "name": "Văn Tự",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_VAN_NHAT",
+    "name": "Vạn Nhất",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_THUONG_TIN_MINH_CUONG",
+    "name": "Minh Cường",
+    "districtId": "HN_THUONG_TIN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_TT_PHU_MINH",
+    "name": "Thị trấn Phú Minh",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_TT_PHU_XUYEN",
+    "name": "Thị trấn Phú Xuyên",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_HONG_MINH",
+    "name": "Hồng Minh",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_PHUONG_DUC",
+    "name": "Phượng Dực",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_NAM_TIEN",
+    "name": "Nam Tiến",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_VAN_HOANG",
+    "name": "Văn Hòang",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_PHU_TUC",
+    "name": "Phú Túc",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_HONG_THAI",
+    "name": "Hồng Thái",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_HOANG_LONG",
+    "name": "Hòang Long",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_NAM_PHONG",
+    "name": "Nam Phong",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_TAN_DAN",
+    "name": "Tân Dân",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_QUANG_HA",
+    "name": "Quang Hà",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_CHUYEN_MY",
+    "name": "Chuyên Mỹ",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_KHAI_THAI",
+    "name": "Khai Thái",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_PHUC_TIEN",
+    "name": "Phúc Tiến",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_VAN_TU",
+    "name": "Vân Từ",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_TRI_THUY",
+    "name": "Tri Thủy",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_DAI_XUYEN",
+    "name": "Đại Xuyên",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_PHU_YEN",
+    "name": "Phú Yên",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_BACH_HA",
+    "name": "Bạch Hạ",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_QUANG_LANG",
+    "name": "Quang Lãng",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_CHAU_CAN",
+    "name": "Châu Can",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_PHU_XUYEN_MINH_TAN",
+    "name": "Minh Tân",
+    "districtId": "HN_PHU_XUYEN"
+  },
+  {
+    "id": "HN_UNG_HOA_TT_VAN_DINH",
+    "name": "Thị trấn Vân Đình",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_HOA_VIEN",
+    "name": "Hoa Viên",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_QUANG_PHU_CAU",
+    "name": "Quảng Phú Cầu",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_TRUONG_THINH",
+    "name": "Trường Thịnh",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_LIEN_BAT",
+    "name": "Liên Bạt",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_CAO_SON_TIEN",
+    "name": "Cao Sơn Tiến",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_PHUONG_TU",
+    "name": "Phương Tú",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_TRUNG_TU",
+    "name": "Trung Tú",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_DONG_TAN",
+    "name": "Đồng Tân",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_TAO_DUONG_VAN",
+    "name": "Tảo Dương Văn",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_THAI_HOA",
+    "name": "Thái Hòa",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_MINH_DUC",
+    "name": "Minh Đức",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_TRAM_LONG",
+    "name": "Trầm Lộng",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_KIM_DUONG",
+    "name": "Kim Đường",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_HOA_PHU",
+    "name": "Hòa Phú",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_DAI_HUNG",
+    "name": "Đại Hùng",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_DONG_LO",
+    "name": "Đông Lỗ",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_PHU_LUU",
+    "name": "Phù Lưu",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_DAI_CUONG",
+    "name": "Đại Cường",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_UNG_HOA_BINH_LUU_QUANG",
+    "name": "Bình Lưu Quang",
+    "districtId": "HN_UNG_HOA"
+  },
+  {
+    "id": "HN_MY_DUC_TT_DAI_NGHIA",
+    "name": "Thị trấn Đại Nghĩa",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_DONG_TAM",
+    "name": "Đồng Tâm",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_THUONG_LAM",
+    "name": "Thượng Lâm",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_TUY_LAI",
+    "name": "Tuy Lai",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_PHUC_LAM",
+    "name": "Phúc Lâm",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_MY_XUYEN",
+    "name": "Mỹ Xuyên",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_AN_MY",
+    "name": "An Mỹ",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_HONG_SON",
+    "name": "Hồng Sơn",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_LE_THANH",
+    "name": "Lê Thanh",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_XUY_XA",
+    "name": "Xuy Xá",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_PHUNG_XA",
+    "name": "Phùng Xá",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_PHU_LUU_TE",
+    "name": "Phù Lưu Tế",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_DAI_HUNG",
+    "name": "Đại Hưng",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_VAN_TIN",
+    "name": "Vạn Tín",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_HUONG_SON",
+    "name": "Hương Sơn",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_HUNG_TIEN",
+    "name": "Hùng Tiến",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_AN_TIEN",
+    "name": "An Tiến",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_HOP_TIEN",
+    "name": "Hợp Tiến",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_HOP_THANH",
+    "name": "Hợp Thanh",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "HN_MY_DUC_AN_PHU",
+    "name": "An Phú",
+    "districtId": "HN_MY_DUC"
+  },
+  {
+    "id": "DN_LIEN_CHIEU_HOA_HIEP_BAC",
+    "name": "Hòa Hiệp Bắc",
+    "districtId": "DN_LIEN_CHIEU"
+  },
+  {
+    "id": "DN_LIEN_CHIEU_HOA_HIEP_NAM",
+    "name": "Hòa Hiệp Nam",
+    "districtId": "DN_LIEN_CHIEU"
+  },
+  {
+    "id": "DN_LIEN_CHIEU_HOA_KHANH_BAC",
+    "name": "Hòa Khánh Bắc",
+    "districtId": "DN_LIEN_CHIEU"
+  },
+  {
+    "id": "DN_LIEN_CHIEU_HOA_KHANH_NAM",
+    "name": "Hòa Khánh Nam",
+    "districtId": "DN_LIEN_CHIEU"
+  },
+  {
+    "id": "DN_LIEN_CHIEU_HOA_MINH",
+    "name": "Hòa Minh",
+    "districtId": "DN_LIEN_CHIEU"
+  },
+  {
+    "id": "DN_THANH_KHE_THANH_KHE_TAY",
+    "name": "Thanh Khê Tây",
+    "districtId": "DN_THANH_KHE"
+  },
+  {
+    "id": "DN_THANH_KHE_THANH_KHE_DONG",
+    "name": "Thanh Khê Đông",
+    "districtId": "DN_THANH_KHE"
+  },
+  {
+    "id": "DN_THANH_KHE_XUAN_HA",
+    "name": "Xuân Hà",
+    "districtId": "DN_THANH_KHE"
+  },
+  {
+    "id": "DN_THANH_KHE_CHINH_GIAN",
+    "name": "Chính Gián",
+    "districtId": "DN_THANH_KHE"
+  },
+  {
+    "id": "DN_THANH_KHE_THAC_GIAN",
+    "name": "Thạc Gián",
+    "districtId": "DN_THANH_KHE"
+  },
+  {
+    "id": "DN_THANH_KHE_AN_KHE",
+    "name": "An Khê",
+    "districtId": "DN_THANH_KHE"
+  },
+  {
+    "id": "DN_HAI_CHAU_THANH_BINH",
+    "name": "Thanh Bình",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_THUAN_PHUOC",
+    "name": "Thuận Phước",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_THACH_THANG",
+    "name": "Thạch Thang",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_HAI_CHAU",
+    "name": "Hải Châu",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_PHUOC_NINH",
+    "name": "Phước Ninh",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_HOA_THUAN_TAY",
+    "name": "Hòa Thuận Tây",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_BINH_THUAN",
+    "name": "Bình Thuận",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_HOA_CUONG_BAC",
+    "name": "Hòa Cường Bắc",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_HAI_CHAU_HOA_CUONG_NAM",
+    "name": "Hòa Cường Nam",
+    "districtId": "DN_HAI_CHAU"
+  },
+  {
+    "id": "DN_SON_TRA_THO_QUANG",
+    "name": "Thọ Quang",
+    "districtId": "DN_SON_TRA"
+  },
+  {
+    "id": "DN_SON_TRA_NAI_HIEN_DONG",
+    "name": "Nại Hiên Đông",
+    "districtId": "DN_SON_TRA"
+  },
+  {
+    "id": "DN_SON_TRA_MAN_THAI",
+    "name": "Mân Thái",
+    "districtId": "DN_SON_TRA"
+  },
+  {
+    "id": "DN_SON_TRA_AN_HAI_BAC",
+    "name": "An Hải Bắc",
+    "districtId": "DN_SON_TRA"
+  },
+  {
+    "id": "DN_SON_TRA_PHUOC_MY",
+    "name": "Phước Mỹ",
+    "districtId": "DN_SON_TRA"
+  },
+  {
+    "id": "DN_SON_TRA_AN_HAI_NAM",
+    "name": "An Hải Nam",
+    "districtId": "DN_SON_TRA"
+  },
+  {
+    "id": "DN_NGU_HANH_SON_MY_AN",
+    "name": "Mỹ An",
+    "districtId": "DN_NGU_HANH_SON"
+  },
+  {
+    "id": "DN_NGU_HANH_SON_KHUE_MY",
+    "name": "Khuê Mỹ",
+    "districtId": "DN_NGU_HANH_SON"
+  },
+  {
+    "id": "DN_NGU_HANH_SON_HOA_QUY",
+    "name": "Hòa Quý",
+    "districtId": "DN_NGU_HANH_SON"
+  },
+  {
+    "id": "DN_NGU_HANH_SON_HOA_HAI",
+    "name": "Hòa Hải",
+    "districtId": "DN_NGU_HANH_SON"
+  },
+  {
+    "id": "DN_CAM_LE_KHUE_TRUNG",
+    "name": "Khuê Trung",
+    "districtId": "DN_CAM_LE"
+  },
+  {
+    "id": "DN_CAM_LE_HOA_PHAT",
+    "name": "Hòa Phát",
+    "districtId": "DN_CAM_LE"
+  },
+  {
+    "id": "DN_CAM_LE_HOA_AN",
+    "name": "Hòa An",
+    "districtId": "DN_CAM_LE"
+  },
+  {
+    "id": "DN_CAM_LE_HOA_THO_TAY",
+    "name": "Hòa Thọ Tây",
+    "districtId": "DN_CAM_LE"
+  },
+  {
+    "id": "DN_CAM_LE_HOA_THO_DONG",
+    "name": "Hòa Thọ Đông",
+    "districtId": "DN_CAM_LE"
+  },
+  {
+    "id": "DN_CAM_LE_HOA_XUAN",
+    "name": "Hòa Xuân",
+    "districtId": "DN_CAM_LE"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_BAC",
+    "name": "Hòa Bắc",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_LIEN",
+    "name": "Hòa Liên",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_NINH",
+    "name": "Hòa Ninh",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_SON",
+    "name": "Hòa Sơn",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_NHON",
+    "name": "Hòa Nhơn",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_PHU",
+    "name": "Hòa Phú",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_PHONG",
+    "name": "Hòa Phong",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_CHAU",
+    "name": "Hòa Châu",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_TIEN",
+    "name": "Hòa Tiến",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_PHUOC",
+    "name": "Hòa Phước",
+    "districtId": "DN_HOA_VANG"
+  },
+  {
+    "id": "DN_HOA_VANG_HOA_KHUONG",
+    "name": "Hòa Khương",
+    "districtId": "DN_HOA_VANG"
+  }
+]

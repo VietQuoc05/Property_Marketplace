@@ -1,0 +1,507 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+enum AuthProvider {
+  GOOGLE
+  FACEBOOK
+}
+
+enum ListingStatus {
+  DRAFT
+  PENDING_REVIEW
+  PUBLISHED
+  REJECTED
+  RENTED
+  ARCHIVED
+}
+
+enum ListingType {
+  APARTMENT
+  HOUSE
+  LAND
+  OFFICE
+  ROOM
+}
+
+
+enum NeedType {
+  APARTMENT
+  HOUSE
+  LAND
+  OFFICE
+  ROOM
+}
+
+enum NeedSaleType {
+  RENT
+  SALE
+}
+
+enum ListingSaleType {
+  RENT
+  SALE
+}
+
+enum ListingAmenity {
+  SCHOOL
+  POOL
+  STORE
+  PARK
+  HOSPITAL
+  STATION
+  GYM
+  YARD
+  CAFE
+}
+
+enum ContractStatus {
+  PENDING
+  ACTIVE
+  TERMINATED
+  EXPIRED
+}
+
+enum ContractInvitationStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+}
+
+enum ConversationType {
+  CONTRACT
+  DIRECT
+}
+
+enum NotificationType {
+  CONTRACT_INVITATION
+  LISTING_INTEREST
+  LISTING_APPROVED
+  LISTING_REJECTED
+}
+
+model User {
+  id String @id @default(uuid())
+  email    String? @unique
+
+  password String?
+
+  fullName String
+
+  avatarUrl String?
+  bio       String?
+  phone     String? @unique
+
+  cityId String?
+
+  city City? @relation(fields: [cityId], references: [id])
+
+  listings Listing[]
+
+  interestedListings ListingInterest[]
+
+  landlordContracts Contract[] @relation("LandlordContracts")
+
+  contractMembers ContractTenant[]
+
+  sentInvitations ContractInvitation[] @relation("ContractInviter")
+
+  receivedInvitations ContractInvitation[] @relation("ContractInvitee")
+
+  conversations ConversationParticipant[]
+
+  messages Message[]
+
+  notifications Notification[]
+
+  forumPosts ForumPost[]
+
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt
+
+  socialAccounts SocialAccount[]
+}
+
+model SocialAccount {
+  id String @id @default(uuid())
+
+  provider AuthProvider
+
+  providerAccountId String
+
+  userId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([provider, providerAccountId])
+  @@unique([userId, provider])
+  @@index([userId])
+}
+
+model City {
+  id String @id
+
+  name String @unique
+
+  districts District[]
+
+  listings Listing[]
+
+  users User[]
+
+  forumPosts ForumPost[]
+}
+
+model District {
+  id String @id
+
+  name String
+
+  cityId String
+
+  city City @relation(fields: [cityId], references: [id], onDelete: Cascade)
+
+  wards Ward[]
+
+  listings Listing[]
+
+  forumPosts ForumPost[]
+
+  @@unique([name, cityId])
+}
+
+model Ward {
+  id String @id
+
+  name String
+
+  districtId String
+
+  district District @relation(fields: [districtId], references: [id], onDelete: Cascade)
+
+  listings Listing[]
+
+  forumPosts ForumPost[]
+
+  @@unique([name, districtId])
+}
+
+model Listing {
+  id String @id @default(uuid())
+
+  createdById String
+
+  createdBy User @relation(fields: [createdById], references: [id], onDelete: Cascade)
+
+  title String
+
+  description String?
+
+  listingType ListingType
+
+  saleType ListingSaleType
+
+  size Decimal?
+
+  monthlyRent Decimal?
+
+  salePrice Decimal?
+
+  isDealable Boolean @default(false)
+
+  depositAmount Decimal?
+
+  wc Int?
+
+  br Int?
+
+  availableFrom DateTime?
+
+  status ListingStatus @default(DRAFT)
+
+  cityId String
+
+  districtId String?
+
+  wardId String?
+
+  city City @relation(fields: [cityId], references: [id])
+
+  district District? @relation(fields: [districtId], references: [id])
+
+  ward Ward? @relation(fields: [wardId], references: [id])
+
+  amenities ListingAmenity[]
+
+  images ListingImage[]
+
+  interests ListingInterest[]
+
+  interestScore Int @default(0)
+
+  moderation ListingModeration?
+
+  messages Message[]
+
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt
+
+  @@index([cityId])
+  @@index([districtId])
+  @@index([wardId])
+  @@index([status])
+  @@index([listingType])
+  @@index([saleType])
+  @@index([monthlyRent])
+  @@index([salePrice])
+}
+
+model ListingInterest {
+  id String @id @default(uuid())
+
+  listingId String
+
+  userId String
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([listingId, userId])
+  @@index([listingId])
+  @@index([userId])
+}
+
+model ListingImage {
+  id String @id @default(uuid())
+
+  listingId String
+
+  listing Listing @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  imageUrl String
+
+  createdAt DateTime @default(now())
+
+  @@index([listingId])
+}
+
+model Contract {
+  id String @id @default(uuid())
+
+  name String
+
+  landlordId String
+
+  status ContractStatus @default(PENDING)
+
+  landlord User @relation("LandlordContracts", fields: [landlordId], references: [id])
+
+  tenants ContractTenant[]
+
+  invitations ContractInvitation[]
+
+  conversation Conversation?
+
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt
+
+  @@index([landlordId])
+}
+
+model ContractTenant {
+  id String @id @default(uuid())
+
+  contractId String
+
+  tenantId String
+
+  contract Contract @relation(fields: [contractId], references: [id], onDelete: Cascade)
+
+  tenant User @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  joinedAt DateTime @default(now())
+
+  @@unique([contractId, tenantId])
+  @@index([tenantId])
+}
+
+model ContractInvitation {
+  id String @id @default(uuid())
+
+  contractId String
+
+  invitedById String
+
+  inviteeId String
+
+  status ContractInvitationStatus @default(PENDING)
+
+  contract Contract @relation(fields: [contractId], references: [id], onDelete: Cascade)
+
+  invitedBy User @relation("ContractInviter", fields: [invitedById], references: [id])
+
+  invitee User @relation("ContractInvitee", fields: [inviteeId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@index([contractId])
+  @@index([inviteeId])
+}
+
+model Conversation {
+  id String @id @default(uuid())
+
+  type ConversationType @default(CONTRACT)
+
+  contractId String? @unique
+
+  contract Contract? @relation(fields: [contractId], references: [id], onDelete: Cascade)
+
+  participants ConversationParticipant[]
+
+  messages Message[]
+
+  createdAt DateTime @default(now())
+}
+
+model ConversationParticipant {
+  id String @id @default(uuid())
+
+  conversationId String
+
+  userId String
+
+  lastReadAt DateTime?
+
+  isArchived Boolean @default(false)
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([conversationId, userId])
+  @@index([userId])
+}
+
+model Message {
+  id String @id @default(uuid())
+
+  conversationId String
+
+  senderId String
+
+  content String
+
+  listingId String?
+
+  listing Listing? @relation(fields: [listingId], references: [id], onDelete: SetNull)
+
+  attachments MessageAttachment[]
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  sender User @relation(fields: [senderId], references: [id])
+
+  sentAt DateTime @default(now())
+
+  @@index([conversationId, sentAt])
+  @@index([listingId])
+}
+
+model MessageAttachment {
+  id String @id @default(uuid())
+
+  messageId String
+
+  url String
+
+  createdAt DateTime @default(now())
+
+  message Message @relation(fields: [messageId], references: [id], onDelete: Cascade)
+
+  @@index([messageId])
+}
+
+model Notification {
+  id        String           @id @default(uuid())
+  userId    String
+  type      NotificationType
+  title     String
+  content   String
+  data      Json?
+  isRead    Boolean          @default(false)
+  createdAt DateTime         @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model ListingModeration {
+  id                    String   @id @default(uuid())
+  listingId             String   @unique
+  listing               Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  decision              String   // APPROVE | REJECT | MANUAL_REVIEW
+  confidence            Float    @default(1.0)
+  intent                String?  // RENT | ROOMMATE | BUY_SELL | UNKNOWN
+  titleDescriptionMatch Boolean  @default(true)
+  imagesMatch           Boolean  @default(true)
+  communityViolation    Boolean  @default(false)
+  reasons               String[]
+  rawResponse           Json?
+  reviewedAt            DateTime @default(now())
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@index([listingId])
+  @@index([decision])
+}
+
+model ForumPost {
+  id        String   @id @default(uuid())
+  title     String
+  detail    String   @db.Text
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  needType     NeedType?
+  needSaleType NeedSaleType?
+
+  cityId     String?
+  city       City?     @relation(fields: [cityId], references: [id])
+  districtId String?
+  district   District? @relation(fields: [districtId], references: [id])
+  wardId     String?
+  ward       Ward?     @relation(fields: [wardId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([needType])
+  @@index([needSaleType])
+  @@index([cityId])
+  @@index([districtId])
+  @@index([wardId])
+  @@index([createdAt])
+}

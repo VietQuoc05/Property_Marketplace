@@ -1,0 +1,302 @@
+[
+  {
+    "id": "HCM_THU_DUC",
+    "name": "Thủ Đức",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q1",
+    "name": "Quận 1",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q3",
+    "name": "Quận 3",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q4",
+    "name": "Quận 4",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q5",
+    "name": "Quận 5",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q6",
+    "name": "Quận 6",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q7",
+    "name": "Quận 7",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q8",
+    "name": "Quận 8",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q10",
+    "name": "Quận 10",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q11",
+    "name": "Quận 11",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_Q12",
+    "name": "Quận 12",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_BINH_TAN",
+    "name": "Bình Tân",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_BINH_THANH",
+    "name": "Bình Thạnh",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_GO_VAP",
+    "name": "Gò Vấp",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_PHU_NHUAN",
+    "name": "Phú Nhuận",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_TAN_BINH",
+    "name": "Tân Bình",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_TAN_PHU",
+    "name": "Tân Phú",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_BINH_CHANH",
+    "name": "Bình Chánh",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_CAN_GIO",
+    "name": "Cần Giờ",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_CU_CHI",
+    "name": "Củ Chi",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_HOC_MON",
+    "name": "Hóc Môn",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HCM_NHA_BE",
+    "name": "Nhà Bè",
+    "cityId": "HCM"
+  },
+  {
+    "id": "HN_BA_DINH",
+    "name": "Ba Đình",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_HOAN_KIEM",
+    "name": "Hoàn Kiếm",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_TAY_HO",
+    "name": "Tây Hồ",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_LONG_BIEN",
+    "name": "Long Biên",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_CAU_GIAY",
+    "name": "Cầu Giấy",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_DONG_DA",
+    "name": "Đống Đa",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_HAI_BA_TRUNG",
+    "name": "Hai Bà Trưng",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_HOANG_MAI",
+    "name": "Hoàng Mai",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_THANH_XUAN",
+    "name": "Thanh Xuân",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_SOC_SON",
+    "name": "Sóc Sơn",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_DONG_ANH",
+    "name": "Đông Anh",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_GIA_LAM",
+    "name": "Gia Lâm",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_NAM_TU_LIEM",
+    "name": "Nam Từ Liêm",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_THANH_TRI",
+    "name": "Thanh Trì",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_BAC_TU_LIEM",
+    "name": "Bắc Từ Liêm",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_ME_LINH",
+    "name": "Mê Linh",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_HA_DONG",
+    "name": "Hà Đông",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_SON_TAY",
+    "name": "Sơn Tây",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_BA_VI",
+    "name": "Ba Vì",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_PHUC_THO",
+    "name": "Phúc Thọ",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_DAN_PHUONG",
+    "name": "Đan Phượng",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_HOAI_DUC",
+    "name": "Hoài Đức",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_QUOC_OAI",
+    "name": "Quốc Oai",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_THACH_THAT",
+    "name": "Thạch Thất",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_CHUONG_MY",
+    "name": "Chương Mỹ",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_THANH_OAI",
+    "name": "Thanh Oai",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_THUONG_TIN",
+    "name": "Thường Tín",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_PHU_XUYEN",
+    "name": "Phú Xuyên",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_UNG_HOA",
+    "name": "Ứng Hòa",
+    "cityId": "HN"
+  },
+  {
+    "id": "HN_MY_DUC",
+    "name": "Mỹ Đức",
+    "cityId": "HN"
+  },
+  {
+    "id": "DN_LIEN_CHIEU",
+    "name": "Liên Chiểu",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_THANH_KHE",
+    "name": "Thanh Khê",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_HAI_CHAU",
+    "name": "Hải Châu",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_SON_TRA",
+    "name": "Sơn Trà",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_NGU_HANH_SON",
+    "name": "Ngũ Hành Sơn",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_CAM_LE",
+    "name": "Cẩm Lệ",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_HOA_VANG",
+    "name": "Hòa Vang",
+    "cityId": "DN"
+  },
+  {
+    "id": "DN_HOANG_SA",
+    "name": "Hoàng Sa",
+    "cityId": "DN"
+  }
+]
