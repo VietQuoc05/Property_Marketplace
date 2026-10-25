@@ -129,14 +129,40 @@ Trả về BẮT BUỘC định dạng JSON chuẩn theo Schema sau:
 
       parts.unshift(prompt);
 
-      const response = await this.aiClient.models.generateContent({
-        model: this.modelName,
-        contents: parts,
-        config: {
-          responseMimeType: 'application/json',
-          temperature: 0.1,
-        },
-      });
+      const candidateModels = [
+        this.modelName,
+        'gemini-3.8-flash',
+        'gemini-2.0-flash',
+        'gemini-1.5-flash',
+      ].filter((m, i, arr) => m && arr.indexOf(m) === i);
+
+      let response: any = null;
+      let lastError: any = null;
+
+      for (const model of candidateModels) {
+        try {
+          response = await this.aiClient.models.generateContent({
+            model,
+            contents: parts,
+            config: {
+              responseMimeType: 'application/json',
+              temperature: 0.1,
+            },
+          });
+          if (response?.text) {
+            break;
+          }
+        } catch (err: any) {
+          lastError = err;
+          this.logger.warn(
+            `Gemini model ${model} failed, attempting next fallback model: ${err?.message || err}`,
+          );
+        }
+      }
+
+      if (!response?.text) {
+        throw lastError || new Error('No response from any Gemini model');
+      }
 
       const rawText = response.text || '';
       return this.parseModerationResponse(rawText);
