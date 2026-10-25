@@ -1,13 +1,8 @@
-import { Injectable } from '@nestjs/common';
-
+﻿import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-
 import { PassportStrategy } from '@nestjs/passport';
-
 import { Profile, Strategy } from 'passport-facebook';
-
 import { AuthProvider } from '@prisma/client';
-
 import { AuthService } from '../auth.service';
 
 @Injectable()
@@ -17,9 +12,9 @@ export class FacebookStrategy extends PassportStrategy(Strategy, 'facebook') {
     private readonly authService: AuthService,
   ) {
     super({
-      clientID: configService.getOrThrow<string>('FACEBOOK_APP_ID'),
-      clientSecret: configService.getOrThrow<string>('FACEBOOK_APP_SECRET'),
-      callbackURL: configService.getOrThrow<string>('FACEBOOK_CALLBACK_URL'),
+      clientID: configService.get<string>('FACEBOOK_APP_ID') || 'disabled_fb_id',
+      clientSecret: configService.get<string>('FACEBOOK_APP_SECRET') || 'disabled_secret',
+      callbackURL: configService.get<string>('FACEBOOK_CALLBACK_URL') || 'http://localhost:3000/auth/facebook/callback',
       scope: ['email', 'public_profile'],
       profileFields: ['id', 'displayName', 'emails', 'photos'],
     });
