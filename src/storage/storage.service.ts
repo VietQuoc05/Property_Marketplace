@@ -1,4 +1,4 @@
-﻿import { Injectable } from '@nestjs/common';
+import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { randomUUID } from 'crypto';
@@ -18,7 +18,7 @@ export class StorageService {
     const storageEndpoint = this.configService.get<string>('STORAGE_ENDPOINT');
     const endpoint = storageEndpoint
       ? storageEndpoint
-      : `http://${this.configService.get('MINIO_ENDPOINT')}:${this.configService.get('MINIO_PORT')}`;
+      : `http://${this.configService.get('MINIO_ENDPOINT') || 'localhost'}:${this.configService.get('MINIO_PORT') || 9000}`;
 
     const region =
       this.configService.get<string>('STORAGE_REGION') || 'us-east-1';
@@ -81,16 +81,26 @@ export class StorageService {
     buffer: Buffer,
     contentType: string,
   ): Promise<string> {
-    const command = new PutObjectCommand({
-      Bucket: this.bucket,
-      Key: fileName,
-      Body: buffer,
-      ContentType: contentType,
-    });
+    try {
+      const command = new PutObjectCommand({
+        Bucket: this.bucket,
+        Key: fileName,
+        Body: buffer,
+        ContentType: contentType,
+      });
 
-    await this.s3Client.send(command);
+      await this.s3Client.send(command);
 
-    return this.getPublicUrl(fileName);
+      return this.getPublicUrl(fileName);
+    } catch (error: any) {
+      console.error(
+        `[StorageService Error] Upload failed for ${fileName} to bucket "${this.bucket}":`,
+        error?.message || error,
+      );
+      throw new InternalServerErrorException(
+        `Storage upload error: ${error?.message || 'Check storage credentials and bucket configuration'}`,
+      );
+    }
   }
 
   async uploadAvatar(file: Express.Multer.File): Promise<string> {
