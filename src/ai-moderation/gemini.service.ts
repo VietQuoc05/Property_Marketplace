@@ -38,6 +38,7 @@ export class GeminiService {
 
   /**
    * Moderates listing content (title, description, images) using Gemini API
+   * following strict 4-step sequential moderation pipeline.
    */
   async moderateListing(data: {
     id: string;
@@ -65,13 +66,15 @@ export class GeminiService {
     try {
       const parts: any[] = [];
 
-      // 1. Prepare image parts (take up to 5 images for speed and token limits)
-      const imagesToProcess = (data.imageUrls || []).slice(0, 5);
+      // 1. Prepare image parts: process ALL uploaded images (never drop any image!)
+      const imagesToProcess = data.imageUrls || [];
       for (const imageUrl of imagesToProcess) {
         try {
           const imagePart = await this.fetchImageInlineData(imageUrl);
           if (imagePart) {
             parts.push(imagePart);
+          } else {
+            this.logger.warn(`Could not load image data for: ${imageUrl}`);
           }
         } catch (imgErr) {
           this.logger.warn(
@@ -81,50 +84,91 @@ export class GeminiService {
         }
       }
 
-      // 2. Prepare text prompt
-      const prompt = `Bạn là hệ thống AI kiểm duyệt bài đăng cho ứng dụng "Homers Property" (Nền tảng cho phép user đăng tin bán, cho thuê bất động sản).
+      // 2. Prepare structured 4-step prompt
+      const prompt = `Bạn là hệ thống AI kiểm duyệt tin đăng bất động sản chuyên nghiệp cho nền tảng "Homers Property".
+Nhiệm vụ của bạn là đánh giá tính hợp lệ của bài đăng dựa trên Tiêu đề (Title), Mô tả (Description) và Danh sách Hình ảnh đính kèm theo quy trình 4 BƯỚC TUẦN TỰ sau:
 
-Nhiệm vụ của bạn là đánh giá tính hợp lệ của bài đăng dựa trên Tiêu đề, Mô tả và Danh sách Hình ảnh đính kèm.
+=== BƯỚC 1: KIỂM DUYỆT TIÊU ĐỀ (TITLE) ===
+Tiêu đề BẮT BUỘC phải liên quan đến lĩnh vực Bất động sản (mua bán, cho thuê nhà, căn hộ, chung cư, phòng trọ, đất đai, mặt bằng, văn phòng, tìm bạn ở ghép...).
+1.1. Nếu Tiêu đề vi phạm tiêu chuẩn cộng đồng (chứa từ ngữ 18+, khiêu dâm, bạo lực, thô tục, lừa đảo):
+     -> Đánh dấu: titleValid = false, titleViolationReason = "Tiêu đề vi phạm tiêu chuẩn cộng đồng"
+1.2. Nếu Tiêu đề không liên quan đến bất động sản (ví dụ: rao bán xe ô tô, xe máy, Fortuner, xe tải, bán điện thoại, tuyển dụng, cho vay tiền, cờ bạc, đa cấp, mua bán đồ gia dụng linh tinh...):
+     -> Đánh dấu: titleValid = false, titleViolationReason = "Tiêu đề không liên quan đến bất động sản"
+1.3. Nếu Tiêu đề hợp lệ liên quan đến bất động sản:
+     -> Đánh dấu: titleValid = true, titleViolationReason = null
 
-QUY TẮC ĐÁNH GIÁ:
-1. Ý ĐỊNH (INTENT): Bài đăng BẮT BUỘC phải liên quan đến:
-- Cho thuê (Phòng trọ, chung cư, nhà nguyên căn, mặt bằng, đất, văn phòng, tìm bạn ở ghép)
-- Bán (Bất động sản)
-* TỪ CHỐI (REJECT) nếu là: Bán đồ đạc thanh lý không liên quan, tâm sự rác, quảng cáo dịch vụ khác (vay tín dụng, làm bằng cấp, cờ bạc, đa cấp...).
+=== BƯỚC 2: KIỂM DUYỆT MÔ TẢ (DESCRIPTION) ===
+2.1. Nếu Mô tả vi phạm tiêu chuẩn cộng đồng (chứa từ ngữ 18+, khiêu dâm, bạo lực, xúc phạm, lừa đảo):
+     -> Đánh dấu: descriptionValid = false, descriptionViolationReason = "Mô tả vi phạm tiêu chuẩn cộng đồng"
+2.2. Nếu Mô tả dùng để quảng cáo dịch vụ cấm hoặc bán sản phẩm phi bất động sản (rao bán xe, điện thoại, sim số, cho vay tiền, cờ bạc...):
+     -> Đánh dấu: descriptionValid = false, descriptionViolationReason = "Mô tả không liên quan đến bất động sản"
+2.3. LƯU Ý ĐẶC BIỆT: Mô tả ngắn gọn chỉ ghi thông tin liên hệ (như "Zalo: 0903...", "Liên hệ chính chủ", "Xem nhà báo trước 30 phút", "Giá thương lượng", "Miễn trung gian"...) hoặc bỏ trống -> HOÀN TOÀN HỢP LỆ.
+     -> Đánh dấu: descriptionValid = true, descriptionViolationReason = null
 
-2. SỰ TƯƠNG THÍCH (TITLE - DESC - IMAGES):
-- Tiêu đề và Mô tả phải thống nhất về mặt nội dung.
-- Các HÌNH ẢNH phải mô tả bất động sản (phòng ngủ, nhà vệ sinh, không gian sống, ban công, lối đi, bản đồ vị trí, toà nhà...).
-* TỪ CHỐI nếu ảnh là: Ảnh mạng không liên quan (xe máy, đồ ăn, ảnh động vật, meme, ảnh người nổi tiếng, ảnh nhạy cảm 18+, ảnh bạo lực).
+=== BƯỚC 3: KIỂM DUYỆT HÌNH ẢNH (IMAGES) ===
+Phải kiểm tra kỹ TẤT CẢ các ảnh được cung cấp:
+3.1. NGUYÊN TẮC BẤT DI BẤT DỊCH VỀ 18+ / NHẠY CẢM:
+     Nếu CÓ BẤT KỲ ẢNH NÀO chứa nội dung 18+, khỏa thân, bán khỏa thân, hở hang bộ phận nhạy cảm, gợi dục, bạo lực, vũ khí, máu me:
+     -> BẮT BUỘC ĐÁNH DẤU: imagesValid = false, imagesViolationReason = "Hình ảnh vi phạm tiêu chuẩn cộng đồng" (LẬP TỨC TỪ CHỐI BÀI ĐĂNG!)
+3.2. Nếu ảnh không phải là bất động sản (ảnh meme, hoạt hình, đồ ăn, xe cộ, động vật, ảnh selfie chân dung người, rác rưởi...):
+     -> Đánh dấu: imagesValid = false, imagesViolationReason = "Hình ảnh không liên quan đến bất động sản"
+3.3. Nếu tất cả các ảnh đều là hình ảnh bất động sản (nhà, phòng ngủ, phòng khách, nhà vệ sinh, chung cư, nội thất, ban công, view, tòa nhà, đất đai, ngõ hẻm...) và không có ảnh nhạy cảm:
+     -> Đánh dấu: imagesValid = true, imagesViolationReason = null
 
-3. TIÊU CHUẨN CỘNG ĐỒNG:
-- Không chứa ngôn từ thù ghét, xúc phạm, đồi trụy, lừa đảo rõ ràng.
+=== BƯỚC 4: XÉT TÍNH TƯƠNG THÍCH (CHỈ XÉT KHI CẢ BƯỚC 1, 2, 3 ĐỀU ĐẠT - VALID) ===
+Nếu bất kỳ bước nào trong Bước 1, 2, 3 bị vi phạm, BỎ QUA Bước 4.
+Chỉ khi titleValid = true, descriptionValid = true VÀ imagesValid = true, mới xét:
 
-QUY ĐỊNH VỀ LÝ DO TỪ CHỐI (reasons):
-- TUYỆT ĐỐI KHÔNG giải thích chi tiết ảnh vi phạm chứa cụ thể nội dung gì (KHÔNG miêu tả ảnh anime, hoạt hình, Doraemon, xe cộ, đồ ăn, meme, người, v.v.).
-- Nếu hình ảnh không phải là bất động sản: BẮT BUỘC chỉ ghi chính xác câu: "Hình ảnh không liên quan đến bất động sản".
-- Nếu hình ảnh chứa nội dung 18+, nhạy cảm, đồi trụy, vũ khí, bạo lực hoặc vi phạm tiêu chuẩn cộng đồng: BẮT BUỘC chỉ ghi chính xác câu: "Hình ảnh vi phạm tiêu chuẩn cộng đồng".
-- Nếu Tiêu đề hoặc Mô tả vi phạm tiêu chuẩn cộng đồng: Ghi "Nội dung vi phạm tiêu chuẩn cộng đồng".
-- Nếu Tiêu đề hoặc Mô tả không liên quan đến bất động sản: Ghi "Nội dung không liên quan đến bất động sản".
-- Nếu Tiêu đề và Mô tả mâu thuẫn nhau: Ghi "Tiêu đề và mô tả không khớp nhau".
+4.1. Tính liên quan giữa Tiêu đề và Mô tả:
+     - Description KHÔNG BẮT BUỘC phải nhắc lại Tiêu đề (như đã nêu ở Bước 2.3).
+     - Chỉ đánh dấu mâu thuẫn khi có sự ĐỐI NGHỊCH RÕ RÀNG VỀ LOẠI HÌNH BẤT ĐỘNG SẢN:
+       Ví dụ: Tiêu đề ghi "Bán đất nền", nhưng Mô tả lại ghi "Cho thuê căn hộ chung cư 2 phòng ngủ full nội thất".
+     - Nếu có mâu thuẫn rõ rệt:
+       -> Đánh dấu: titleDescriptionConsistent = false, titleDescriptionMismatchReason = "Tiêu đề và mô tả mâu thuẫn nhau"
+     - Nếu không mâu thuẫn:
+       -> Đánh dấu: titleDescriptionConsistent = true, titleDescriptionMismatchReason = null
+
+4.2. Tính liên quan giữa Hình ảnh và Tiêu đề:
+     - QUY TẮC: "Chỉ loại khi mâu thuẫn QUÁ LỘ LIỄU".
+     - Ví dụ mâu thuẫn quá lộ liễu: Tiêu đề ghi "Bán căn hộ chung cư cao cấp", nhưng TOÀN BỘ hình ảnh chỉ chụp một bãi đất trống hoang sơ không có nhà cửa/công trình.
+     - Còn nếu Tiêu đề là chung cư mà hình ảnh chụp tòa nhà, view ban công, phòng khách, khuôn viên -> HOÀN TOÀN HỢP LỆ.
+     - Nếu mâu thuẫn quá lộ liễu:
+       -> Đánh dấu: imagesTitleConsistent = false, imagesTitleMismatchReason = "Hình ảnh mâu thuẫn với tiêu đề"
+     - Nếu phù hợp hoặc có thể chấp nhận được:
+       -> Đánh dấu: imagesTitleConsistent = true, imagesTitleMismatchReason = null
+
+=== QUY TẮC KẾT LUẬN (DECISION & REASONS) ===
+- Nếu có bất kỳ lý do vi phạm nào được ghi nhận ở trên:
+  * decision = "REJECT"
+  * reasons = mảng chứa đúng các chuỗi lý do vi phạm đã xác định (không giải thích dông dài, không mô tả chi tiết ảnh).
+- Nếu không có bất kỳ vi phạm nào:
+  * decision = "APPROVE"
+  * reasons = []
 
 THÔNG TIN BÀI ĐĂNG CẦN DUYỆT:
 - Tiêu đề: ${data.title}
 - Mô tả: ${data.description || 'Không có mô tả'}
 - Loại hình: ${data.listingType || 'Không xác định'}
 - Hình thức: ${data.saleType || 'Không xác định'}
-- Số lượng ảnh kèm theo: ${parts.length}
+- Tổng số lượng ảnh kèm theo: ${parts.length} ảnh
 
 YÊU CẦU ĐẦU RA:
 Trả về BẮT BUỘC định dạng JSON chuẩn theo Schema sau:
 {
+  "titleValid": boolean,
+  "titleViolationReason": string | null,
+  "descriptionValid": boolean,
+  "descriptionViolationReason": string | null,
+  "imagesValid": boolean,
+  "imagesViolationReason": string | null,
+  "titleDescriptionConsistent": boolean,
+  "titleDescriptionMismatchReason": string | null,
+  "imagesTitleConsistent": boolean,
+  "imagesTitleMismatchReason": string | null,
   "decision": "APPROVE" | "REJECT",
-  "confidence": number, // từ 0.0 đến 1.0
+  "confidence": number,
   "intent": "RENT" | "ROOMMATE" | "BUY_SELL" | "UNKNOWN",
-  "titleDescriptionMatch": boolean,
-  "imagesMatch": boolean,
-  "communityViolation": boolean,
-  "reasons": string[] // Danh sách các lý do chuẩn hóa theo quy định trên nếu bị REJECT, nếu APPROVE thì để mảng rỗng []
+  "reasons": string[]
 }`;
 
       parts.unshift(prompt);
@@ -202,8 +246,6 @@ Trả về BẮT BUỘC định dạng JSON chuẩn theo Schema sau:
 
       // Cấp độ 2: Tối ưu chuyên sâu cho AI Worker:
       // Resize về tối đa 512px, nén WebP quality 70.
-      // Kích thước này nằm gọn trong 1 single tile (~258 tokens) của Gemini Vision,
-      // dung lượng Base64 payload cực nhỏ (~30-50KB) giúp AI Worker xử lý tức thì.
       const aiOptimizedBuffer = await sharp(rawBuffer)
         .rotate()
         .resize({
@@ -231,11 +273,10 @@ Trả về BẮT BUỘC định dạng JSON chuẩn theo Schema sau:
   }
 
   /**
-   * Helper to safely parse JSON response from Gemini
+   * Safely parses JSON response from Gemini according to standardized criteria.
    */
   private parseModerationResponse(text: string): ModerationResult {
     try {
-      // Strip any markdown codeblock backticks if present
       const cleanJson = text
         .replace(/^```json\s*/i, '')
         .replace(/^```\s*/i, '')
@@ -243,39 +284,80 @@ Trả về BẮT BUỘC định dạng JSON chuẩn theo Schema sau:
         .trim();
 
       const parsed = JSON.parse(cleanJson);
+      const reasons: string[] = [];
 
+      // 1. Title violation check
+      if (parsed.titleValid === false && parsed.titleViolationReason) {
+        reasons.push(parsed.titleViolationReason);
+      }
+
+      // 2. Description violation check
+      if (parsed.descriptionValid === false && parsed.descriptionViolationReason) {
+        reasons.push(parsed.descriptionViolationReason);
+      }
+
+      // 3. Images violation check (Nudity/18+ or non-real estate)
+      if (parsed.imagesValid === false && parsed.imagesViolationReason) {
+        reasons.push(parsed.imagesViolationReason);
+      }
+
+      // 4. Consistency checks (Only if Title, Description, and Images are all individually valid)
+      const allComponentsValid =
+        parsed.titleValid !== false &&
+        parsed.descriptionValid !== false &&
+        parsed.imagesValid !== false;
+
+      if (allComponentsValid) {
+        if (
+          parsed.titleDescriptionConsistent === false &&
+          parsed.titleDescriptionMismatchReason
+        ) {
+          reasons.push(parsed.titleDescriptionMismatchReason);
+        }
+
+        if (
+          parsed.imagesTitleConsistent === false &&
+          parsed.imagesTitleMismatchReason
+        ) {
+          reasons.push(parsed.imagesTitleMismatchReason);
+        }
+      }
+
+      // Fallback: If AI marked REJECT with parsed.reasons and reasons list is empty
+      if (reasons.length === 0 && parsed.decision === 'REJECT') {
+        if (Array.isArray(parsed.reasons) && parsed.reasons.length > 0) {
+          reasons.push(...parsed.reasons);
+        } else {
+          reasons.push('Nội dung không phù hợp với tiêu chuẩn kiểm duyệt');
+        }
+      }
+
+      const uniqueReasons = Array.from(new Set(reasons));
       const decision: ModerationDecision =
-        parsed.decision === 'APPROVE' ? 'APPROVE' : 'REJECT';
+        uniqueReasons.length === 0 && parsed.decision === 'APPROVE'
+          ? 'APPROVE'
+          : 'REJECT';
 
       const validIntents = ['RENT', 'ROOMMATE', 'BUY_SELL', 'UNKNOWN'];
       const intent = validIntents.includes(parsed.intent)
         ? parsed.intent
         : 'UNKNOWN';
 
-      const reasons =
-        decision === 'APPROVE'
-          ? []
-          : this.sanitizeReasons(
-              Array.isArray(parsed.reasons) ? parsed.reasons : [],
-              parsed,
-            );
+      const hasCommunityViolation = uniqueReasons.some((r) =>
+        r.toLowerCase().includes('tiêu chuẩn cộng đồng'),
+      );
 
       return {
         decision,
         confidence:
-          typeof parsed.confidence === 'number' ? parsed.confidence : 0.8,
+          typeof parsed.confidence === 'number' ? parsed.confidence : 0.95,
         intent,
-        titleDescriptionMatch:
-          typeof parsed.titleDescriptionMatch === 'boolean'
-            ? parsed.titleDescriptionMatch
-            : true,
+        titleDescriptionMatch: parsed.titleDescriptionConsistent !== false,
         imagesMatch:
-          typeof parsed.imagesMatch === 'boolean' ? parsed.imagesMatch : true,
-        communityViolation:
-          typeof parsed.communityViolation === 'boolean'
-            ? parsed.communityViolation
-            : false,
-        reasons,
+          parsed.imagesValid !== false &&
+          parsed.imagesTitleConsistent !== false,
+        communityViolation: hasCommunityViolation,
+        reasons: uniqueReasons,
       };
     } catch (parseErr) {
       this.logger.error(
@@ -293,95 +375,5 @@ Trả về BẮT BUỘC định dạng JSON chuẩn theo Schema sau:
         reasons: ['Không thể phân tích phản hồi từ AI kiểm duyệt.'],
       };
     }
-  }
-
-  /**
-   * Sanitizes and standardizes rejection reasons.
-   * Ensures no detailed descriptions of image contents are leaked,
-   * strictly mapping them to user-specified standard messages.
-   */
-  private sanitizeReasons(rawReasons: string[], parsed: any): string[] {
-    const sanitized: string[] = [];
-
-    for (const r of rawReasons) {
-      const lower = r.toLowerCase();
-
-      // 1. Violations of community standards (18+, nudity, weapons, violence, hate speech)
-      const isCommunityViolation =
-        lower.includes('18+') ||
-        lower.includes('nhạy cảm') ||
-        lower.includes('đồi trụy') ||
-        lower.includes('vũ khí') ||
-        lower.includes('bạo lực') ||
-        lower.includes('tiêu chuẩn cộng đồng') ||
-        lower.includes('khiêu dâm') ||
-        lower.includes('thù ghét');
-
-      const isImageRelated =
-        lower.includes('hình ảnh') ||
-        lower.includes('ảnh') ||
-        lower.includes('image');
-
-      if (isCommunityViolation) {
-        if (isImageRelated) {
-          sanitized.push('Hình ảnh vi phạm tiêu chuẩn cộng đồng');
-        } else {
-          sanitized.push('Nội dung vi phạm tiêu chuẩn cộng đồng');
-        }
-      } else if (isImageRelated) {
-        // Any other image rejection (meme, anime, cartoon, car, food, animal, celebrity, etc.)
-        sanitized.push('Hình ảnh không liên quan đến bất động sản');
-      } else if (
-        lower.includes('tiêu đề') &&
-        (lower.includes('mô tả') ||
-          lower.includes('thống nhất') ||
-          lower.includes('khớp'))
-      ) {
-        sanitized.push('Tiêu đề và mô tả không khớp nhau');
-      } else if (
-        lower.includes('bất động sản') ||
-        lower.includes('cho thuê') ||
-        lower.includes('bán') ||
-        lower.includes('thanh lý') ||
-        lower.includes('vay') ||
-        lower.includes('quảng cáo')
-      ) {
-        sanitized.push('Nội dung không liên quan đến bất động sản');
-      } else {
-        // For general violations not mentioning image specifics
-        sanitized.push(r);
-      }
-    }
-
-    // Safety checks against parsed flags if rawReasons was empty or incomplete
-    if (parsed.communityViolation) {
-      if (parsed.imagesMatch === false) {
-        sanitized.push('Hình ảnh vi phạm tiêu chuẩn cộng đồng');
-      } else {
-        sanitized.push('Nội dung vi phạm tiêu chuẩn cộng đồng');
-      }
-    }
-
-    if (parsed.imagesMatch === false) {
-      if (!sanitized.includes('Hình ảnh vi phạm tiêu chuẩn cộng đồng')) {
-        sanitized.push('Hình ảnh không liên quan đến bất động sản');
-      }
-    }
-
-    if (parsed.intent === 'UNKNOWN') {
-      if (!sanitized.includes('Hình ảnh không liên quan đến bất động sản')) {
-        sanitized.push('Nội dung không liên quan đến bất động sản');
-      }
-    }
-
-    if (parsed.titleDescriptionMatch === false) {
-      sanitized.push('Tiêu đề và mô tả không khớp nhau');
-    }
-
-    if (sanitized.length === 0) {
-      sanitized.push('Hình ảnh không liên quan đến bất động sản');
-    }
-
-    return Array.from(new Set(sanitized));
   }
 }
