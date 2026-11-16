@@ -40,6 +40,19 @@ const messageInclude = {
       city: { select: { name: true } },
     },
   },
+  forumPost: {
+    select: {
+      id: true,
+      title: true,
+      detail: true,
+      needType: true,
+      needSaleType: true,
+      user: { select: { fullName: true } },
+      ward: { select: { name: true } },
+      district: { select: { name: true } },
+      city: { select: { name: true } },
+    },
+  },
 };
 
 function formatMessageListing(listing: any) {
@@ -63,6 +76,25 @@ function formatMessageListing(listing: any) {
   };
 }
 
+function formatMessageForumPost(forumPost: any) {
+  if (!forumPost) return null;
+  const addressParts = [
+    forumPost.ward?.name,
+    forumPost.district?.name,
+    forumPost.city?.name,
+  ].filter(Boolean);
+
+  return {
+    id: forumPost.id,
+    title: forumPost.title,
+    detail: forumPost.detail,
+    needType: forumPost.needType ? String(forumPost.needType) : null,
+    needSaleType: forumPost.needSaleType ? String(forumPost.needSaleType) : null,
+    address: addressParts.length > 0 ? addressParts.join(', ') : null,
+    authorName: forumPost.user?.fullName || null,
+  };
+}
+
 function formatMessageDto(message: any): MessageResponseDto {
   return {
     id: message.id,
@@ -71,6 +103,8 @@ function formatMessageDto(message: any): MessageResponseDto {
     content: message.content,
     listingId: message.listingId || null,
     listing: formatMessageListing(message.listing),
+    forumPostId: message.forumPostId || null,
+    forumPost: formatMessageForumPost(message.forumPost),
     attachments: message.attachments?.map((a: any) => a.url) || [],
     sentAt: message.sentAt instanceof Date ? message.sentAt.toISOString() : message.sentAt,
     sender: message.sender ? {
@@ -123,6 +157,7 @@ export class ConversationService {
     content?: string,
     attachmentUrls?: string[],
     listingId?: string,
+    forumPostId?: string,
   ): Promise<DirectMessageResponseDto> {
     const targetUser = await this.prisma.user.findUnique({
       where: { id: targetUserId },
@@ -183,13 +218,14 @@ export class ConversationService {
     }
 
     let messageRes: MessageResponseDto | null = null;
-    if (content || (attachmentUrls && attachmentUrls.length > 0) || listingId) {
+    if (content || (attachmentUrls && attachmentUrls.length > 0) || listingId || forumPostId) {
       const message = await this.prisma.message.create({
         data: {
           conversationId,
           senderId,
           content: content || '',
           listingId: listingId || undefined,
+          forumPostId: forumPostId || undefined,
           attachments: attachmentUrls?.length
             ? { create: attachmentUrls.map((url) => ({ url })) }
             : undefined,
@@ -509,6 +545,7 @@ export class ConversationService {
     content?: string,
     attachmentUrls?: string[],
     listingId?: string,
+    forumPostId?: string,
   ): Promise<MessageResponseDto> {
     const conversation = await this.prisma.conversation.findUnique({
       where: { id: conversationId },
@@ -536,6 +573,7 @@ export class ConversationService {
         senderId,
         content: content || '',
         listingId: listingId || undefined,
+        forumPostId: forumPostId || undefined,
         attachments: attachmentUrls?.length
           ? { create: attachmentUrls.map((url) => ({ url })) }
           : undefined,

@@ -8,6 +8,8 @@ export class CreateDirectMessageDto {
   content!: string;
 
   listingId?: string;
+
+  forumPostId?: string;
 }
 
 export class SendMessageDto {
@@ -15,6 +17,8 @@ export class SendMessageDto {
   content!: string;
 
   listingId?: string;
+
+  forumPostId?: string;
 }
 
 export class MessageListingDto {
@@ -27,6 +31,16 @@ export class MessageListingDto {
   salePrice?: number | string | null;
   imageUrl?: string | null;
   address?: string | null;
+}
+
+export class MessageForumPostDto {
+  id!: string;
+  title!: string;
+  detail!: string;
+  needType?: string | null;
+  needSaleType?: string | null;
+  address?: string | null;
+  authorName?: string | null;
 }
 
 export class ConversationResponseDto {
@@ -82,6 +96,10 @@ export class MessageResponseDto {
   listingId?: string | null;
 
   listing?: MessageListingDto | null;
+
+  forumPostId?: string | null;
+
+  forumPost?: MessageForumPostDto | null;
 
   attachments?: string[];
 

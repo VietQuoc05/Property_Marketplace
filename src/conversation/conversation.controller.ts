@@ -31,6 +31,7 @@ export class ConversationController {
     @Body('targetUserId') targetUserId: string,
     @Body('content') content?: string,
     @Body('listingId') listingId?: string,
+    @Body('forumPostId') forumPostId?: string,
     @UploadedFiles() files?: Express.Multer.File[],
   ) {
     const attachmentUrls: string[] = [];
@@ -48,6 +49,7 @@ export class ConversationController {
       content,
       attachmentUrls,
       listingId,
+      forumPostId,
     );
   }
 }
@@ -115,6 +117,7 @@ export class ConversationQueryController {
     @CurrentUser() user: { id: string },
     @Body('content') content?: string,
     @Body('listingId') listingId?: string,
+    @Body('forumPostId') forumPostId?: string,
     @UploadedFiles() files?: Express.Multer.File[],
   ) {
     const attachmentUrls: string[] = [];
@@ -132,6 +135,7 @@ export class ConversationQueryController {
       content,
       attachmentUrls,
       listingId,
+      forumPostId,
     );
   }
 

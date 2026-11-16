@@ -57,13 +57,10 @@ enum ListingSaleType {
 enum ListingAmenity {
   SCHOOL
   POOL
-  STORE
   PARK
   HOSPITAL
   STATION
   GYM
-  YARD
-  CAFE
 }
 
 enum ContractStatus {
@@ -415,6 +412,10 @@ model Message {
 
   listing Listing? @relation(fields: [listingId], references: [id], onDelete: SetNull)
 
+  forumPostId String?
+
+  forumPost ForumPost? @relation(fields: [forumPostId], references: [id], onDelete: SetNull)
+
   attachments MessageAttachment[]
 
   conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
@@ -425,6 +426,7 @@ model Message {
 
   @@index([conversationId, sentAt])
   @@index([listingId])
+  @@index([forumPostId])
 }
 
 model MessageAttachment {
@@ -493,6 +495,8 @@ model ForumPost {
   district   District? @relation(fields: [districtId], references: [id])
   wardId     String?
   ward       Ward?     @relation(fields: [wardId], references: [id])
+
+  messages   Message[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
